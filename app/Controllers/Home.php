@@ -4,7 +4,19 @@ class Home extends BaseController
 {
 	public function index()
 	{
-		return view('admin_login');
+
+		// Determine if there is a user in the admin account.
+		$db = \Config\Database::connect();
+		$query = $db->query('SELECT * FROM Admin');
+		$results = $query->getResult();
+		
+		if (count($results) > 0) {
+			return view('admin_login');
+		} else {
+			// echo "No admin user";
+			return view('admin_registration');
+		}
+
 	}
 
 	//--------------------------------------------------------------------
