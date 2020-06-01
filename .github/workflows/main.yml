@@ -39,6 +39,6 @@ jobs:
       - name: Upload ftp
         uses: sebastianpopp/ftp-action@releases/v2
         with:
-          hosts: ${{ secrets.FTP_SERVER }}
+          host: ${{ secrets.FTP_SERVER }}
           user: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
