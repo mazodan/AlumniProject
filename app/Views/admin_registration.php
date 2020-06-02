@@ -32,35 +32,57 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center">
-        <h1 class="mt-5">Installation Page</h1>
+        <h1 class="mt-4">Installation Page</h1>
         <p class="lead">This page will only appear if there is no Administrator registered in the database</p>
         <p class="lead">Registration required to use this website application</p>
       </div>
     </div>
-    <div class="row mt-5">
-        <form action="post" class="mx-auto">
-          <h2>Register</h2>
+    <div class="row mt-3">
+        <form action="post" class="mx-auto needs-validation" oninput='confirmPassword.setCustomValidity(confirmPassword.value != password.value ? "Passwords do not match." : "")' novalidate>
+          <h3>Register</h3>
           <div class="form-group">
               <label for="inputUsername">Username</label>
               <input type="text" class="form-control" name="username" id="inputUsername" required>
+              <div class="invalid-feedback">
+                Username Required
+              </div>
           </div>
           <div class="form-group">
               <label for="inputPassword">Password</label>
-              <input type="password" class="form-control" name="password" id="inputPassword" required>  
+              <input type="password" class="form-control" name="password" id="inputPassword" required>
+              <div class="invalid-feedback">
+                Password Required
+              </div>
+          </div>
+          <div class="form-group">
+              <label for="inputConfirmedPassword">Confirm Password</label>
+              <input type="password" class="form-control" name="confirmPassword" id="inputConfirmedPassword" required>
+              <div class="invalid-feedback">
+                Re-enter Password
+              </div>
           </div>
           <div class="form-group">
               <label for="inputEmail">Email Address</label>
               <input type="email" class="form-control" name="email" id="inputEmail" required>
               <small id="emailHelp" class="form-text text-muted">Required for Account recovery</small>
+              <div class="invalid-feedback">
+                E-mail Required
+              </div>
           </div>
-          <h2>Personal Information</h2>
+          <h3>Personal Information</h3>
           <div class="form-group">
               <label for="inputFirstName">First Name</label>
               <input type="text" class="form-control" name="firstname" id="inputFirstName" required>
+              <div class="invalid-feedback">
+                First Name Required
+              </div>
           </div>
           <div class="form-group">
               <label for="inputLastName">Last Name</label>
-              <input type="text" class="form-control" name="lastname" id="inputLastName" required> 
+              <input type="text" class="form-control" name="lastname" id="inputLastName" required>
+              <div class="invalid-feedback">
+                Last Name Required
+              </div>
           </div>
           <button type="submit" class="btn btn-primary btn-block">Submit</button>
         </form>
@@ -69,7 +91,39 @@
 
   <!-- Bootstrap core JavaScript -->
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js" integrity="sha384-1CmrxMRARb6aLqgBO7yyAxTOQE2AKb9GfXnEo760AUcUmFx3ibVJJAzGytlQcNXd" crossorigin="anonymous"></script>
+  <script>
 
+    (function() {
+      'use strict';
+      window.addEventListener('load', function() {
+        // Verify entered password
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.getElementsByClassName('needs-validation');
+        // Loop over them and prevent submission
+        
+
+        var validation = Array.prototype.filter.call(forms, function(form) {
+          form.addEventListener('submit', function(event) {
+            // Regexp to disallow spaces
+            var acceptedUsernamePattern = /^\w+$/;
+
+            if (!acceptedUsernamePattern.test(document.getElementById('inputUsername').value)) {
+              document.getElementById('inputUsername').setCustomValidity("No Spaces");
+            } else {
+              document.getElementById('inputUsername').setCustomValidity("");
+            }
+
+            if (form.checkValidity() === false) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+          }, false);
+        });
+      }, false);
+    })();
+  </script>
 </body>
 
 </html>
