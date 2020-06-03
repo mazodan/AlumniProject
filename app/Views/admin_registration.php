@@ -38,7 +38,7 @@
       </div>
     </div>
     <div class="row mt-3">
-        <form method="post" action="/adminregistration" class="mx-auto needs-validation" oninput='confirmPassword.setCustomValidity(confirmPassword.value != password.value ? "Passwords do not match." : "")' novalidate>
+        <form method="post" action="adminregistration" class="mx-auto needs-validation" oninput='confirmPassword.setCustomValidity(confirmPassword.value != password.value ? "Passwords do not match." : "")' novalidate>
           <h3>Register</h3>
           <div class="form-group">
               <label for="inputUsername">Username</label>
