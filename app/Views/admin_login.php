@@ -14,6 +14,17 @@
             <div class="card card-signin my-5">
             <div class="card-body">
                 <h5 class="card-title text-center">Administrator Sign In</h5>
+                <?php
+                    if(isset($errormessage)) {
+                ?>
+                    <div class="alert alert-danger" role="alert">
+                       
+                        <?= $errormessage ?>
+                        
+                    </div>
+                <?php 
+                    }
+                ?>
                 <form method="post" action="adminauth" class="form-signin">
                 <div class="form-label-group">
                     <input type="input" name="username" id="inputUsername" class="form-control" placeholder="Username" required autofocus>

@@ -12,7 +12,8 @@ class Adminauth extends BaseController
         if (count($admin) == 1) {
             echo count($admin);
         } else {
-            
+            $data['errormessage']   = "Username does not exist";
+            return view('admin_login', $data);
         }
 
         
