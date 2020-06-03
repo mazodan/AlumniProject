@@ -32,7 +32,7 @@
                 <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Sign in</button>
                 <button class="btn btn-lg btn-google btn-block text-uppercase" type="submit">Forgot Password</button>
                 <hr class="my-4">
-                <a class="btn btn-lg btn-google btn-block text-uppercase text-white" >Administrator Sign in</a>
+                <a href="adminlogin" class="btn btn-lg btn-google btn-block text-uppercase text-white" >Administrator Sign in</a>
                 </form>
             </div>
             </div>
