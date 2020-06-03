@@ -14,14 +14,14 @@
             <div class="card card-signin my-5">
             <div class="card-body">
                 <h5 class="card-title text-center">Administrator Sign In</h5>
-                <form class="form-signin">
+                <form method="post" action="adminauth" class="form-signin">
                 <div class="form-label-group">
-                    <input type="input" id="inputUsername" class="form-control" placeholder="Username" required autofocus>
+                    <input type="input" name="username" id="inputUsername" class="form-control" placeholder="Username" required autofocus>
                     <label for="inputUsername">Username</label>
                 </div>
 
                 <div class="form-label-group">
-                    <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                    <input type="password" name="password" id="inputPassword" class="form-control" placeholder="Password" required>
                     <label for="inputPassword">Password</label>
                 </div>
 
