@@ -42,8 +42,8 @@
           <h3>Register</h3>
           <div class="form-group">
               <label for="inputUsername">Username</label>
-              <input type="text" class="form-control" name="username" id="inputUsername" required>
-              <div class="invalid-feedback">
+              <input type="text" class="form-control" name="username" id="inputUsername" oninput='validateUsername()' required>
+              <div id="usernameVal" class="invalid-feedback">
                 Username Required
               </div>
           </div>
@@ -93,6 +93,25 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js" integrity="sha384-1CmrxMRARb6aLqgBO7yyAxTOQE2AKb9GfXnEo760AUcUmFx3ibVJJAzGytlQcNXd" crossorigin="anonymous"></script>
   <script>
 
+    function validateUsername() {
+
+      // Regexp to disallow spaces
+      var acceptedUsernamePattern = /^\w+$/;
+
+
+      if (!acceptedUsernamePattern.test(document.getElementById('inputUsername').value)) {
+        if (document.getElementById('inputUsername').value.length > 0) {
+          document.getElementById('inputUsername').setCustomValidity("Username must not contain any spaces");
+          document.getElementById('usernameVal').innerHTML = "Username must not contain any spaces"
+        } else {
+          document.getElementById('inputUsername').setCustomValidity("Username Required");
+          document.getElementById('usernameVal').innerHTML = "Username Required"
+        }
+      } else {
+        document.getElementById('inputUsername').setCustomValidity("");
+      }
+    }
+
     (function() {
       'use strict';
       window.addEventListener('load', function() {
@@ -105,14 +124,9 @@
 
         var validation = Array.prototype.filter.call(forms, function(form) {
           form.addEventListener('submit', function(event) {
-            // Regexp to disallow spaces
-            var acceptedUsernamePattern = /^\w+$/;
+            
 
-            if (!acceptedUsernamePattern.test(document.getElementById('inputUsername').value)) {
-              document.getElementById('inputUsername').setCustomValidity("No Spaces");
-            } else {
-              document.getElementById('inputUsername').setCustomValidity("");
-            }
+            
 
             if (form.checkValidity() === false) {
               event.preventDefault();
