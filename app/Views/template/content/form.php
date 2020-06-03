@@ -2,7 +2,7 @@
     <div class="container-fluid mt-5 mb-5">
         <div class="container border border-success">
 
-            <div class="container-fluid">
+            <div class="container-fluid mt-3">
                 <h5>DIRECTIONS:</h5>
                 <p>In each of the following questions, put a check mark on the blank before the corresponding answer/s. Please supply the answer needed in other items.</p>
             </div>
@@ -160,25 +160,25 @@
                             <div class="col-auto text-center">
                                 <label>Degree(s) & Specialization(s)</label>
                                 <input class="form-control form-control-sm" type="text">
-                                <input class="form-control form-control-sm py-1" type="text">
+                                <input class="form-control form-control-sm my-2" type="text">
                                 <input class="form-control form-control-sm" type="text">
                             </div>
                             <div class="col-auto text-center">
                                 <label>College or University</label>
                                 <input class="form-control form-control-sm" type="text">
-                                <input class="form-control form-control-sm py-1" type="text">
+                                <input class="form-control form-control-sm my-2" type="text">
                                 <input class="form-control form-control-sm" type="text">
                             </div>
                             <div class="col-auto text-center">
-                                <label>Year Graduated)</label>
+                                <label>Year Graduated</label>
                                 <input class="form-control form-control-sm" type="text">
-                                <input class="form-control form-control-sm py-1" type="text">
+                                <input class="form-control form-control-sm my-2" type="text">
                                 <input class="form-control form-control-sm" type="text">
                             </div>
                             <div class="col-auto text-center">
                                 <label>Honor(s) or Award(s)</label>
                                 <input class="form-control form-control-sm" type="text">
-                                <input class="form-control form-control-sm py-1" type="text">
+                                <input class="form-control form-control-sm my-2" type="text">
                                 <input class="form-control form-control-sm" type="text">
                             </div>
                         </div>
@@ -417,9 +417,6 @@
                     <input class="form-control form-control-sm" type="text" name="" id="">
                 </div>
 
-            </div>
-
-            <div class="container-fluid tab">
                 <!--- Q9 --->
                 <div class="form-group">
                     <label><strong>9. If self-employed, what type of business are you engaged in? (Check one or as many as applicable)</strong></label>
@@ -496,6 +493,10 @@
                         </div>
                     </div>
                 </div>
+
+            </div>
+
+            <div class="container-fluid tab">
 
                 <!--- Q10 --->
                 <div class="form-group">
@@ -574,11 +575,393 @@
                     </div>
                 </div>
 
+                <!--- Q12 --->
+                <div class="form-group">
+                    <label><strong>12. How long did you stay in your first job?</strong></label>
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="q12fj" id="l1" value="1">
+                                <label class="form-check-label" for="l1">Less than a month</label>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="q12fj" id="l2" value="1">
+                                <label class="form-check-label" for="l2">1 year to less than 2 years</label>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="q12fj" id="q12oth" value="1">
+                                <label class="form-check-label" for="q12oth">Others, please specify</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="form-check form-check-inline align-middle">
+                                <input class="form-check-input" type="radio" name="q12fj" id="6mo" value="1">
+                                <label class="form-check-label" for="6mo">1 to 6 months</label>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="form-check form-check-inline align-middle">
+                                <input class="form-check-input" type="radio" name="q12fj" id="l3" value="1">
+                                <label class="form-check-label" for="l3">2 years to less than 3 years</label>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="form-check form-check-inline">
+                                <input class="form-control form-control-sm" type="text" name="" id="" value="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="q12fj" id="11mo" value="1">
+                                <label class="form-check-label" for="11mo">7 to 11 months</label>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="q12fj" id="l4" value="1">
+                                <label class="form-check-label" for="l4">3 years to less than 4 years</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--- Q13 --->
+                <div class="form-group">
+                    <label><strong>13. How many jobs you had before your present job?</strong></label>
+                    <input class="form-control form-control-sm" type="text" name="" id="">
+                </div>
+
+                <!--- Q14 --->
+                <div class="form-group">
+                    <label><strong>14. The following are some difficulties/problems that you might have encountered in getting your first job? Please check the difficulties/problems that you have encountered.</strong></label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q14q" id="q14a1" value="1">
+                        <label class="form-check-label" for="q14a1">inability to communicate in the English language</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q14q" id="q14a2" value="1">
+                        <label class="form-check-label" for="q14a2">lack of preparation for the interview and competitive exams</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q14q" id="q14a3" value="1">
+                        <label class="form-check-label" for="q14a3">keen competition among the applicants</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q14q" id="q14a4" value="1">
+                        <label class="form-check-label" for="q14a4">failure to find influential persons who have the proper connections to the employer</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q14q" id="q14a5" value="1">
+                        <label class="form-check-label" for="q14a5">employer's preference for single applicants</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q14q" id="q14a6" value="1">
+                        <label class="form-check-label" for="q14a6">lack of experience</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q14q" id="q14a7" value="1">
+                        <label class="form-check-label" for="q14a7">others (please specify)</label>
+                        <input class="form-control form-control-sm" type="text" name="">
+                    </div>
+                </div>
+
+                <!--- Q15 --->
+                <div class="form-group">
+                    <label><strong>15. Job level position</strong></label>
+                    <div class="row text-center">
+                        <div class="col-4">
+                            <div class="form-check form-check-inline">
+                                <label class="form-check-label" for="l1"><u>Job Level</u></label>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="form-check form-check-inline">
+                                <label class="form-check-label" for="l2"><u>First Job</u></label>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="form-check form-check-inline">
+                                <label class="form-check-label" for="q12oth"><u>Current or Present Job</u></label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="row">
+                        <div class="col-4">
+                            <label class="form-check-label" for="l1">Rank or Clerical</label>
+                        </div>    
+                        <div class="col-4 text-center">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="jlp" id="" value="1">
+                            </div>
+                        </div>
+                        <div class="col-4 text-center">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="jlp" id="" value="1">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-4">
+                            <label class="form-check-label" for="l1">Professional, Technical, Supervisory</label>
+                        </div>    
+                        <div class="col-4 text-center">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="jlp" id="" value="1">
+                            </div>
+                        </div>
+                        <div class="col-4 text-center">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="jlp" id="" value="1">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-4">
+                            <label class="form-check-label" for="l1">Managerial Executive</label>
+                        </div>    
+                        <div class="col-4 text-center">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="jlp" id="" value="1">
+                            </div>
+                        </div>
+                        <div class="col-4 text-center">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="jlp" id="" value="1">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-4">
+                            <label class="form-check-label" for="l1">Self-employed</label>
+                        </div>    
+                        <div class="col-4 text-center">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="jlp" id="" value="1">
+                            </div>
+                        </div>
+                        <div class="col-4 text-center">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="jlp" id="" value="1">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--- Q16 --->
+                <div class="form-group">
+                    <label><strong>16. What were your reasons for accepting the job? You can check more than one answer.</strong></label>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" name="raj" id="sab" value="1">
+                                <label class="form-check-label" for="sab">salaries and benefits</label>
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" name="raj" id="edta" value="1">
+                                <label class="form-check-label" for="edta">my education/training is not adequate</label>
+                            </div>
+                        </div>
+                    </div>
+
+                        
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" name="raj" id="ch" value="1">
+                                <label class="form-check-label" for="ch">career challenge</label>
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" name="raj" id="daje" value="1">
+                                <label class="form-check-label" for="daje">desire to acquire job experience</label>
+                            </div>
+                        </div>
+                    </div>
+                         
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" name="raj" id="rssk" value="1">
+                                <label class="form-check-label" for="rssk">related to special skills</label>
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" name="raj" id="fjo" value="1">
+                                <label class="form-check-label" for="fjo">it was the first job offered to me</label>
+                            </div>
+                        </div>
+                    </div>
+                            
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" name="raj" id="ptr" value="1">
+                                <label class="form-check-label" for="ptr">proximity to residence</label>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" name="raj" id="bpexr" value="1">
+                                <label class="form-check-label" for="bpexr">I have not passed the board/professional exam required for the job</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" name="raj" id="najo" value="1">
+                                <label class="form-check-label" for="najo">no available job opening in line with my course</label>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" name="raj" id="q16oth" value="1">
+                                <label class="form-check-label" for="q16oth">other reason(s), please specify</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="form-check form-check-inline align-middle">
+                                <input class="form-check-input" type="checkbox" name="raj" id="baq" value="1">
+                                <label class="form-check-label" for="baq">other applicants have better academic qualifications than mine</label>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <input class="form-control form-control-sm" type="text" name="" id="" value="">
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-check form-check-inline align-top">
+                                <input class="form-check-input" type="checkbox" name="raj" id="nowexp" value="1">
+                                <label class="form-check-label" for="nowexp">I don't have work experience in the jobs related to my major</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-check form-check-inline align-top">
+                                <input class="form-check-input" type="checkbox" name="raj" id="poths" value="1">
+                                <label class="form-check-label" for="poths">employer preferred to hire graduates from other schools</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--- Q17--->
+                <div class="form-group">
+                    <label><strong>17. Employment history (since obtaining first degree to-date)</strong></label>
+                    <div class="row">
+                        <div class="col">
+                            <!-- <label>Name of Employer</label> -->
+                            <div class="row mb-4 pb-2 text-center">
+                                <div class="col">
+                                    <label>Name of Employer</label>
+                                </div>
+                            </div>
+                            <input class="form-control form-control-sm" type="text">
+                            <input class="form-control form-control-sm my-2" type="text">
+                            <input class="form-control form-control-sm mb-2" type="text">
+                            <input class="form-control form-control-sm" type="text">
+                        </div>
+                        <div class="col text-center">
+                            <div class="row mb-4 pb-2 text-center">
+                                <div class="col">
+                                    <label>Position Held</label>
+                                </div>
+                            </div>
+                            <input class="form-control form-control-sm" type="text">
+                            <input class="form-control form-control-sm my-2" type="text">
+                            <input class="form-control form-control-sm mb-2" type="text">
+                            <input class="form-control form-control-sm" type="text">
+                        </div>
+
+                        <div class="col text-center">
+                            <label>Period Employed</label>
+                            <div class="row">
+                                <div class="col">
+                                    <label>From</label>
+                                </div>
+                                <div class="col">
+                                    <label>To</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <input class="form-control form-control-sm" type="text">
+                                </div>
+                                <div class="col">
+                                    <input class="form-control form-control-sm" type="text">
+                                </div>
+                            </div>
+                            <div class="row my-2">
+                                <div class="col">
+                                    <input class="form-control form-control-sm" type="text">
+                                </div>
+                                <div class="col">
+                                    <input class="form-control form-control-sm" type="text">
+                                </div>
+                            </div>
+                            <div class="row mb-2">
+                                <div class="col">
+                                    <input class="form-control form-control-sm" type="text">
+                                </div>
+                                <div class="col">
+                                    <input class="form-control form-control-sm" type="text">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <input class="form-control form-control-sm" type="text">
+                                </div>
+                                <div class="col">
+                                    <input class="form-control form-control-sm" type="text">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col text-center">
+                            <div class="row mb-4 pb-2 text-center">
+                                <div class="col">
+                                    <label>Minimum Qualification Required</label>
+                                </div>
+                            </div>
+                            <input class="form-control form-control-sm" type="text">
+                            <input class="form-control form-control-sm my-2" type="text">
+                            <input class="form-control form-control-sm mb-2" type="text">
+                            <input class="form-control form-control-sm" type="text">
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
-            
+            <!-- <div class="container-fluid bat">
+                <h5>C. PRODUCTIVITY</h5>
+            </div> -->
 
-            <div class="text-right">
+            <div class="container-fluid text-right">
                 <button class="btn btn-secondary" type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
                 <button class="btn btn-success" type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
             </div>
