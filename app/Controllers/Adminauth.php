@@ -10,9 +10,14 @@ class Adminauth extends BaseController
 
         // Check password
         if (count($admin) == 1) {
-            echo count($admin);
+            if (password_verify($this->request->getVar('password'), $admin[0]['password'])){
+                echo 'login success';
+            } else {
+                $data['errormessage'] = "Wrong Password";
+                return view('admin_login', $data);
+            }
         } else {
-            $data['errormessage']   = "Username does not exist";
+            $data['errormessage'] = "Username does not exist";
             return view('admin_login', $data);
         }
 

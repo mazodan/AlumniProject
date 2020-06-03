@@ -17,6 +17,6 @@ class Adminregistration extends BaseController
 
         $adminModel->insert($data);
 
-        echo 'Form submitted';
+        return view('status/registration_success_redirect');
     }
 }
