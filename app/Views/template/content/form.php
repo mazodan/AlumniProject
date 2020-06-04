@@ -957,19 +957,641 @@
 
             </div>
 
-            <!-- <div class="container-fluid bat">
+            <div class="container-fluid tab">
                 <h5>C. PRODUCTIVITY</h5>
-            </div> -->
 
-            <div class="container-fluid text-right">
-                <button class="btn btn-secondary" type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
-                <button class="btn btn-success" type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+                <!--- Q1 --->
+                <div class="form-group">
+                    <label><strong>1. What is your monthly gross income? (Check on the range where your monthly gross falls.).</strong></label>
+                    <div class="row">
+                        <div class="col-5">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="cq1" id="b5" value="1">
+                                <label class="form-check-label" for="b5">Below &#8369;5,000.00</label>
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="cq1" id="b20" value="1">
+                                <label class="form-check-label" for="b20">&#8369;15,000.00 to less than &#8369;20,000.00</label>
+                            </div>
+                        </div>
+                    </div>
+
+                        
+                    <div class="row">
+                        <div class="col-5">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="cq1" id="b10" value="1">
+                                <label class="form-check-label" for="b10">&#8369;5,000.00 to less than &#8369;10,000.00</label>
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="cq1" id="b25" value="1">
+                                <label class="form-check-label" for="b25">&#8369;20,000.00 to less than &#8369;25,000.00</label>
+                            </div>
+                        </div>
+                    </div>
+                         
+                    <div class="row">
+                        <div class="col-5">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="cq1" id="b15" value="1">
+                                <label class="form-check-label" for="b15">&#8369;10,000.00 to less than &#8369;15,000.00</label>
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="cq1" id="a25" value="1">
+                                <label class="form-check-label" for="a25">&#8369;25,000.00 and above</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--- Q2 --->
+                <div class="form-group">
+                    <label><strong>2. Professional Examination(s) Passed</strong></label>
+                    <div class="row text-center">
+                        <div class="col">
+                            <label class="form-check-label" for="l1">Name of Examination</label>
+                        </div>
+                        <div class="col-3">
+                            <label class="form-check-label" for="l2">Date Taken</label>
+                        </div>
+                        <div class="col-3">
+                            <label class="form-check-label" for="q12oth">Rating</label>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col">
+                            <input class="form-control form-control-sm" type="text">
+                        </div>    
+                        <div class="col-3">
+                            <input class="form-control form-control-sm" type="text">
+                        </div>
+                        <div class="col-3">
+                            <input class="form-control form-control-sm" type="text">
+                        </div>
+                    </div>
+
+                    <div class="row my-2">
+                        <div class="col">
+                            <input class="form-control form-control-sm" type="text">
+                        </div>    
+                        <div class="col-3">
+                            <input class="form-control form-control-sm" type="text">
+                        </div>
+                        <div class="col-3">
+                            <input class="form-control form-control-sm" type="text">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <input class="form-control form-control-sm" type="text">
+                        </div>    
+                        <div class="col-3">
+                            <input class="form-control form-control-sm" type="text">
+                        </div>
+                        <div class="col-3">
+                            <input class="form-control form-control-sm" type="text">
+                        </div>
+                    </div>
+                </div>
+
+                <!--- Q3 --->
+                <div class="form-group">
+                    <label><strong>3. Training(s) / Advance Studies Attended After College</strong></label>
+                    <p>Please list down all professional work-related training program(s)including advance studies you have attended after college.</p>
+                    <div class="row text-center">
+                        <div class="col">
+                            <label class="form-check-label" for="l1">Title of Training or Advance Study</label>
+                        </div>
+                        <div class="col-3">
+                            <label class="form-check-label" for="l2">Duration & Credits Earned</label>
+                        </div>
+                        <div class="col-3">
+                            <label class="form-check-label" for="q12oth">Name of Training Institution/College/University</label>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col">
+                            <input class="form-control form-control-sm" type="text">
+                        </div>    
+                        <div class="col-3">
+                            <input class="form-control form-control-sm" type="text">
+                        </div>
+                        <div class="col-3">
+                            <input class="form-control form-control-sm" type="text">
+                        </div>
+                    </div>
+
+                    <div class="row my-2">
+                        <div class="col">
+                            <input class="form-control form-control-sm" type="text">
+                        </div>    
+                        <div class="col-3">
+                            <input class="form-control form-control-sm" type="text">
+                        </div>
+                        <div class="col-3">
+                            <input class="form-control form-control-sm" type="text">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <input class="form-control form-control-sm" type="text">
+                        </div>    
+                        <div class="col-3">
+                            <input class="form-control form-control-sm" type="text">
+                        </div>
+                        <div class="col-3">
+                            <input class="form-control form-control-sm" type="text">
+                        </div>
+                    </div>
+                </div>
+
+                <!--- Q4 --->
+                <div class="form-group">
+                    <label><strong>4. Scholarship Grants</strong></label>
+                    <textarea class="form-control" id="" rows="2"></textarea>
+                </div>
+
+                <!--- Q5 --->
+                <div class="form-group">
+                    <label><strong>5. Awards Received</strong></label>
+                    <textarea class="form-control" id="" rows="2"></textarea>
+                </div>
+
+                <!--- Q6 --->
+                <div class="form-group">
+                    <label><strong>6. Researches and Publications</strong></label>
+                    <textarea class="form-control" id="" rows="2"></textarea>
+                </div>
+
+                <!--- Q7 --->
+                <div class="form-group">
+                    <label><strong>7. Community Involvement Activities</strong></label>
+                    <textarea class="form-control" id="" rows="2"></textarea>
+                </div>
+
+                <!--- Q8 --->
+                <div class="form-group">
+                    <label><strong>8. Other Professional Engagements</strong></label>
+                    <textarea class="form-control" id="" rows="2"></textarea>
+                </div>
+
+                <h5>D. IMPACT OF PAULINIAN EDUCATION</h5>
+
+                <!--- Q1 --->
+                <div class="form-group">
+                    <label><strong>1. How do you asses the relevance of your Paulinian education in the present times?</strong></label>
+                    <div class="row">
+                        <div class="col-5">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="cq1" id="b5" value="1">
+                                <label class="form-check-label" for="b5">very relevant</label>
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="cq1" id="b20" value="1">
+                                <label class="form-check-label" for="b20">somewhat relevant</label>
+                            </div>
+                        </div>
+                    </div>
+
+                        
+                    <div class="row">
+                        <div class="col-5">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="cq1" id="b10" value="1">
+                                <label class="form-check-label" for="b10">relevant</label>
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="cq1" id="b25" value="1">
+                                <label class="form-check-label" for="b25">not relevant</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--- Q2 --->
+                <div class="form-group">
+                    <label><strong>2. To what extent has your Paulinian education contributed to the development of your well-being? Please check the appropriate degree of extent.</strong></label>
+                    <div class="container-fluid py-3 border">
+                        <div class="row text-center mb-3">
+                            <div class="col">
+                                <label class="form-check-label">Items</label>
+                            </div>
+                            <div class="col-2">
+                                <label class="form-check-label">Great Extent</label>
+                            </div>
+                            <div class="col-2">
+                                <label class="form-check-label">Average Extent</label>
+                            </div>
+                            <div class="col-2">
+                                <label class="form-check-label">Least Extent</label>
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col">
+                                <label class="form-check-label">a. It has helped me to advance my career</label>
+                            </div>    
+                            <div class="col-2 text-center">
+                                <div class ="form-check">
+                                    <input class="form-check-input" type="radio" name="dq2a" value="1">
+                                </div>
+                            </div>
+                            <div class="col-2 text-center">
+                                <div class ="form-check">
+                                    <input class="form-check-input" type="radio" name="dq2a" value="1">
+                                </div>
+                            </div>
+                            <div class="col-2 text-center">
+                                <div class ="form-check">
+                                    <input class="form-check-input" type="radio" name="dq2a" value="1">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row my-2">
+                            <div class="col">
+                                <label class="form-check-label">b. It has enhanced my technical, managerial and leadership knowledge and skills</label>
+                            </div>    
+                            <div class="col-2 text-center">
+                                <div class ="form-check">
+                                    <input class="form-check-input" type="radio" name="dq2b" value="1">
+                                </div>
+                            </div>
+                            <div class="col-2 text-center">
+                                <div class ="form-check">
+                                    <input class="form-check-input" type="radio" name="dq2b" value="1">
+                                </div>
+                            </div>
+                            <div class="col-2 text-center">
+                                <div class ="form-check">
+                                    <input class="form-check-input" type="radio" name="dq2b" value="1">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                <label class="form-check-label">c. It has provided me with professional competence and values</label>
+                            </div>    
+                            <div class="col-2 text-center">
+                                <div class ="form-check">
+                                    <input class="form-check-input" type="radio" name="dq2c" value="1">
+                                </div>
+                            </div>
+                            <div class="col-2 text-center">
+                                <div class ="form-check">
+                                    <input class="form-check-input" type="radio" name="dq2c" value="1">
+                                </div>
+                            </div>
+                            <div class="col-2 text-center">
+                                <div class ="form-check">
+                                    <input class="form-check-input" type="radio" name="dq2c" value="1">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row my-2">
+                            <div class="col">
+                                <label class="form-check-label">d. It has contributed to my professional prestige</label>
+                            </div>    
+                            <div class="col-2 text-center">
+                                <div class ="form-check">
+                                    <input class="form-check-input" type="radio" name="dq2d" value="1">
+                                </div>
+                            </div>
+                            <div class="col-2 text-center">
+                                <div class ="form-check">
+                                    <input class="form-check-input" type="radio" name="dq2d" value="1">
+                                </div>
+                            </div>
+                            <div class="col-2 text-center">
+                                <div class ="form-check">
+                                    <input class="form-check-input" type="radio" name="dq2d" value="1">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                <label class="form-check-label">e. It has broadened my understanding of life and my role in the life of the Catholic Church</label>
+                            </div>    
+                            <div class="col-2 text-center">
+                                <div class ="form-check">
+                                    <input class="form-check-input" type="radio" name="dq2e" value="1">
+                                </div>
+                            </div>
+                            <div class="col-2 text-center">
+                                <div class ="form-check">
+                                    <input class="form-check-input" type="radio" name="dq2e" value="1">
+                                </div>
+                            </div>
+                            <div class="col-2 text-center">
+                                <div class ="form-check">
+                                    <input class="form-check-input" type="radio" name="dq2e" value="1">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row my-2">
+                            <div class="col">
+                                <label class="form-check-label">f. It has molded me completely as a person</label>
+                            </div>    
+                            <div class="col-2 text-center">
+                                <div class ="form-check">
+                                    <input class="form-check-input" type="radio" name="dq2f" value="1">
+                                </div>
+                            </div>
+                            <div class="col-2 text-center">
+                                <div class ="form-check">
+                                    <input class="form-check-input" type="radio" name="dq2f" value="1">
+                                </div>
+                            </div>
+                            <div class="col-2 text-center">
+                                <div class ="form-check">
+                                    <input class="form-check-input" type="radio" name="dq2f" value="1">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                <label class="form-check-label">g. It has enhanced my understanding of relationship with God</label>
+                            </div>    
+                            <div class="col-2 text-center">
+                                <div class ="form-check">
+                                    <input class="form-check-input" type="radio" name="dq2g" value="1">
+                                </div>
+                            </div>
+                            <div class="col-2 text-center">
+                                <div class ="form-check">
+                                    <input class="form-check-input" type="radio" name="dq2g" value="1">
+                                </div>
+                            </div>
+                            <div class="col-2 text-center">
+                                <div class ="form-check">
+                                    <input class="form-check-input" type="radio" name="dq2g" value="1">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row my-2">
+                            <div class="col">
+                                <label class="form-check-label">h. It has imbibed in me love and service for God and fellowmen</label>
+                            </div>    
+                            <div class="col-2 text-center">
+                                <div class ="form-check">
+                                    <input class="form-check-input" type="radio" name="dq2i" value="1">
+                                </div>
+                            </div>
+                            <div class="col-2 text-center">
+                                <div class ="form-check">
+                                    <input class="form-check-input" type="radio" name="dq2i" value="1">
+                                </div>
+                            </div>
+                            <div class="col-2 text-center">
+                                <div class ="form-check">
+                                    <input class="form-check-input" type="radio" name="dq2i" value="1">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                <label class="form-check-label">i. Others (Please describe)</label>
+                                <input class="form-control form-control-sm" type="text">
+                            </div>    
+                            <div class="col-2 text-center">
+                                <div class ="form-check">
+                                    <input class="form-check-input" type="radio" name="dq2oth" value="1">
+                                </div>
+                            </div>
+                            <div class="col-2 text-center">
+                                <div class ="form-check">
+                                    <input class="form-check-input" type="radio" name="dq2oth" value="1">
+                                </div>
+                            </div>
+                            <div class="col-2 text-center">
+                                <div class ="form-check">
+                                    <input class="form-check-input" type="radio" name="dq2oth" value="1">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--- Q3 --->
+                <div class="form-group">
+                    <label><strong>3. Would you recommend St. Paul University Philippines to potential students?</strong></label>
+                    <div class="row">
+                        <div class="col-5">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="cq1" id="b5" value="1">
+                                <label class="form-check-label" for="b5">definitely</label>
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="cq1" id="b20" value="1">
+                                <label class="form-check-label" for="b20">probably</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-5">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="cq1" id="b10" value="1">
+                                <label class="form-check-label" for="b10">not sure</label>
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="cq1" id="b25" value="1">
+                                <label class="form-check-label" for="b25">definitely not</label>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="container-fluid tab">
+                <h5>E. ALUMNI INVOLVEMENT</h5>
+                <!--- Q1 --->
+                <div class="form-group">
+                    <label><strong>1. How do you think can you get yourself involved in SPUP affairs?</strong></label>
+                    <div class="container-fluid border py-3">
+                        <div class="row text-center mb-3">
+                            <div class="col">
+                                <label class="form-check-label">Items</label>
+                            </div>
+                            <div class="col-2">
+                                <label class="form-check-label">High Priority</label>
+                            </div>
+                            <div class="col-2">
+                                <label class="form-check-label">Average Priority</label>
+                            </div>
+                            <div class="col-2">
+                                <label class="form-check-label">Low Priority</label>
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col">
+                                <label class="form-check-label">a. By providing financial support to some of SPUP's programs and projects.</label>
+                            </div>    
+                            <div class="col-2 text-center">
+                                <div class ="form-check">
+                                    <input class="form-check-input" type="radio" name="dq2a" value="1">
+                                </div>
+                            </div>
+                            <div class="col-2 text-center">
+                                <div class ="form-check">
+                                    <input class="form-check-input" type="radio" name="dq2a" value="1">
+                                </div>
+                            </div>
+                            <div class="col-2 text-center">
+                                <div class ="form-check">
+                                    <input class="form-check-input" type="radio" name="dq2a" value="1">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row my-2">
+                            <div class="col">
+                                <label class="form-check-label">b. By extendong my technical expertise as a resource person for training.</label>
+                            </div>    
+                            <div class="col-2 text-center">
+                                <div class ="form-check">
+                                    <input class="form-check-input" type="radio" name="dq2b" value="1">
+                                </div>
+                            </div>
+                            <div class="col-2 text-center">
+                                <div class ="form-check">
+                                    <input class="form-check-input" type="radio" name="dq2b" value="1">
+                                </div>
+                            </div>
+                            <div class="col-2 text-center">
+                                <div class ="form-check">
+                                    <input class="form-check-input" type="radio" name="dq2b" value="1">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                <label class="form-check-label">c. By promoting SPUP in my community.</label>
+                            </div>    
+                            <div class="col-2 text-center">
+                                <div class ="form-check">
+                                    <input class="form-check-input" type="radio" name="dq2c" value="1">
+                                </div>
+                            </div>
+                            <div class="col-2 text-center">
+                                <div class ="form-check">
+                                    <input class="form-check-input" type="radio" name="dq2c" value="1">
+                                </div>
+                            </div>
+                            <div class="col-2 text-center">
+                                <div class ="form-check">
+                                    <input class="form-check-input" type="radio" name="dq2c" value="1">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row my-2">
+                            <div class="col">
+                                <label class="form-check-label">d. By participating in the activities of the SPUP Alumni Association and my Alumni chapter.</label>
+                            </div>    
+                            <div class="col-2 text-center">
+                                <div class ="form-check">
+                                    <input class="form-check-input" type="radio" name="dq2d" value="1">
+                                </div>
+                            </div>
+                            <div class="col-2 text-center">
+                                <div class ="form-check">
+                                    <input class="form-check-input" type="radio" name="dq2d" value="1">
+                                </div>
+                            </div>
+                            <div class="col-2 text-center">
+                                <div class ="form-check">
+                                    <input class="form-check-input" type="radio" name="dq2d" value="1">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                <label class="form-check-label">e. By encouraging friends and acquaintances to send their children to SPUP for their schooling.</label>
+                            </div>    
+                            <div class="col-2 text-center">
+                                <div class ="form-check">
+                                    <input class="form-check-input" type="radio" name="dq2e" value="1">
+                                </div>
+                            </div>
+                            <div class="col-2 text-center">
+                                <div class ="form-check">
+                                    <input class="form-check-input" type="radio" name="dq2e" value="1">
+                                </div>
+                            </div>
+                            <div class="col-2 text-center">
+                                <div class ="form-check">
+                                    <input class="form-check-input" type="radio" name="dq2e" value="1">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                <label class="form-check-label">f. Others (Please describe)</label>
+                                <input class="form-control form-control-sm" type="text">
+                            </div>    
+                            <div class="col-2 text-center">
+                                <div class ="form-check">
+                                    <input class="form-check-input" type="radio" name="dq2oth" value="1">
+                                </div>
+                            </div>
+                            <div class="col-2 text-center">
+                                <div class ="form-check">
+                                    <input class="form-check-input" type="radio" name="dq2oth" value="1">
+                                </div>
+                            </div>
+                            <div class="col-2 text-center">
+                                <div class ="form-check">
+                                    <input class="form-check-input" type="radio" name="dq2oth" value="1">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-5">
+                <button class="btn btn-lg btn-outline-secondary btns" type="button" id="prevBtn" onclick="nextPrev(-1)">Prev</button>
+                <button class="btn btn-lg btn-outline-success btns" type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
             </div>
             <div class="mb-5" style="text-align:center;margin-top:40px;">
                 <span class="step"></span>
                 <span class="step"></span>
                 <span class="step"></span>
-                <!-- <span class="step"></span> -->
+                <span class="step"></span>
+                <span class="step"></span>
             </div>
             
             </form>
