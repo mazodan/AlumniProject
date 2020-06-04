@@ -3,11 +3,11 @@
 class Dashboard extends BaseController
 {
     public function index() {
-        session_start();
+        $session = session();
         if (isset($_SESSION['login'])) {
             return view('dashboard');
         } else {
-            return view('admin_login');
+            return redirect()->to('adminlogin');
         }
     }
 }

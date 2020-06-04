@@ -4,7 +4,7 @@ class Adminlogin extends BaseController
 {
     public function index() {
         // Start the session
-        session_start();
+        $session = session();
 
         if (isset($_SESSION['login'])) {
             return redirect()->to('dashboard');

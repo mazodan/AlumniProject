@@ -14,9 +14,9 @@
             <div class="card card-signin my-5">
             <div class="card-body">
                 <h5 class="card-title text-center">Administrator Sign In</h5>
-                <?php if (isset($errormessage)) : ?>
+                <?php if (isset($_SESSION['errormsg'])) : ?>
                     <div class="alert alert-danger" role="alert">
-                        <?= $errormessage ?>
+                        <?= $_SESSION['errormsg'] ?>
                     </div>
                 <?php endif ?>
                 <form method="post" action="adminauth" class="form-signin">

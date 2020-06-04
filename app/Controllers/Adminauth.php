@@ -8,21 +8,26 @@ class Adminauth extends BaseController
 
         $admin = $adminModel->select('id, password')->where(['username' => $this->request->getVar('username')])->findAll();
 
+        $session = session();
         // Check password
         if (count($admin) == 1) {
+            // Session config
+            
+
             if (password_verify($this->request->getVar('password'), $admin[0]['password'])){
                 // Implement session
-                session_start();
                 $_SESSION['login'] = true;
 
-                return redirect()->to( base_url('dashboard') );
+                return redirect()->to('dashboard');
             } else {
-                $data['errormessage'] = "Wrong Password";
-                return view('admin_login', $data);
+                $_SESSION['errormsg'] = 'Wrong Password';
+                $session->markAsFlashdata('errormsg');
+                return redirect()->to('adminlogin');
             }
         } else {
-            $data['errormessage'] = "Username does not exist";
-            return view('admin_login', $data);
+            $_SESSION['errormsg'] = 'Username does not exist';
+            $session->markAsFlashdata('errormsg');
+            return redirect()->to('adminlogin');
         }
 
         
