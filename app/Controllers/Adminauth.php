@@ -11,7 +11,11 @@ class Adminauth extends BaseController
         // Check password
         if (count($admin) == 1) {
             if (password_verify($this->request->getVar('password'), $admin[0]['password'])){
-                echo 'login success';
+                // Implement session
+                session_start();
+                $_SESSION['login'] = true;
+
+                return redirect()->to( base_url('dashboard') );
             } else {
                 $data['errormessage'] = "Wrong Password";
                 return view('admin_login', $data);

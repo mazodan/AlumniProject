@@ -3,7 +3,13 @@
 class Adminlogin extends BaseController
 {
     public function index() {
+        // Start the session
+        session_start();
 
-        return view('admin_login');
+        if (isset($_SESSION['login'])) {
+            return redirect()->to('dashboard');
+        } else {
+            return view('admin_login');
+        }
     }
 }
