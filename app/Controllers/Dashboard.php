@@ -1,15 +1,13 @@
 <?php namespace App\Controllers;
 
-class Adminlogin extends BaseController
+class Dashboard extends BaseController
 {
     public function index() {
-        // Start the session
         $session = session();
-
         if (isset($_SESSION['login'])) {
-            return redirect()->to('dashboard');
+            return view('dashboard');
         } else {
-            return view('admin_login');
+            return redirect()->to('adminlogin');
         }
     }
 }

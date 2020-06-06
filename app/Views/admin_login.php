@@ -14,17 +14,11 @@
             <div class="card card-signin my-5">
             <div class="card-body">
                 <h5 class="card-title text-center">Administrator Sign In</h5>
-                <?php
-                    if(isset($errormessage)) {
-                ?>
+                <?php if (isset($_SESSION['errormsg'])) : ?>
                     <div class="alert alert-danger" role="alert">
-                       
-                        <?= $errormessage ?>
-                        
+                        <?= $_SESSION['errormsg'] ?>
                     </div>
-                <?php 
-                    }
-                ?>
+                <?php endif ?>
                 <form method="post" action="adminauth" class="form-signin">
                 <div class="form-label-group">
                     <input type="input" name="username" id="inputUsername" class="form-control" placeholder="Username" required autofocus>
@@ -38,7 +32,7 @@
 
                 <div class="custom-control custom-checkbox mb-3">
                     <input type="checkbox" class="custom-control-input" id="customCheck1">
-                    <label class="custom-control-label" for="customCheck1">Remember password</label>
+                    <label class="custom-control-label" for="customCheck1">Stay signed in</label>
                 </div>
                 <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Sign in</button>
                 <hr class="my-4">
