@@ -81,3 +81,13 @@ function scrollToTop() {
         scrollAnimation = setTimeout("scrollToTop()", 2);
     } else clearTimeout(scrollAnimation);
 }
+
+$(window).resize(function(){
+  // console.log('resize called');
+  var width = $(window).width();
+  if(width < 576){
+      // $('#govt').removeClass('col-2').addClass('col-4');
+      // $('#priv').removeClass('col-2').addClass('col-4');
+      $('.sw-col-4').removeClass('col-auto col-2').addClass('col-4');
+  }
+}).resize();//trigger the resize event on page load.
