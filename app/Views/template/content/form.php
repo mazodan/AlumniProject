@@ -9,7 +9,7 @@
 
             <form action="" method="POST" id="regForm">
             <!--- GENERAL INFORMATION --->
-            <div class="container-fluid tab">
+            <div class="container-fluid ats-form-tab">
                 <h5>A. GENERAL INFORMATION</h5>
 
                 <!--- Name --->
@@ -188,7 +188,7 @@
             </div>
 
             <!--- EMPLOYABILITY --->
-            <div class="container-fluid tab">
+            <div class="container-fluid ats-form-tab">
                 <h5>B. EMPLOYABILITY</h5>
 
                 <!--- Q1 --->
@@ -497,7 +497,7 @@
 
             </div>
 
-            <div class="container-fluid tab">
+            <div class="container-fluid ats-form-tab">
 
                 <!--- Q10 --->
                 <div class="form-group">
@@ -958,7 +958,7 @@
 
             </div>
 
-            <div class="container-fluid tab">
+            <div class="container-fluid ats-form-tab">
                 <h5>C. PRODUCTIVITY</h5>
 
                 <!--- Q1 --->
@@ -1431,7 +1431,7 @@
 
             </div>
 
-            <div class="container-fluid tab">
+            <div class="container-fluid ats-form-tab">
                 <h5>E. ALUMNI INVOLVEMENT</h5>
 
                 <!--- Q1 --->
