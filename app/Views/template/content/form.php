@@ -7,16 +7,24 @@
                 <p>In each of the following questions, put a check mark on the blank before the corresponding answer/s. Please supply the answer needed in other items.</p>
             </div>
 
-            <form action="" method="POST" id="regForm">
+            <form class="form-horizontal" action="" method="POST" id="regForm">
             <!--- GENERAL INFORMATION --->
             <div class="container-fluid ats-form-tab">
                 <h5>A. GENERAL INFORMATION</h5>
 
                 <!--- Name --->
                 <div class="form-group row pt-1">
-                    <label class="col-sm-2 col-form-label" for="name"><strong>Name</strong></label>
-                    <div class="col-sm-10">
-                        <input class="form-control form-control-sm" id="name" type="text" />
+                    <label class="col-sm-2 col-form-label" for="f_name"><strong>First Name</strong></label>
+                    <div class="col-sm-2">
+                        <input class="form-control form-control-sm" id="f_name" name="f_name" type="text" />
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-5 col-form-label" for="m_name"><strong>Middle Name</strong></label>
+                        <input class="col-sm-6 form-control form-control-sm" id="m_name" name="m_name" type="text" />
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-5 col-form-label" for="l_name"><strong>Last Name</strong></label>
+                        <input class="col-sm-7 form-control form-control-sm" id="l_name" name="l_name" type="text" />
                     </div>
                 </div>
 
