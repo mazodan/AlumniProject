@@ -1,6 +1,6 @@
 
     <div class="container-fluid mt-5 mb-5">
-        <div class="container border border-success">
+        <div class="container-fluid border border-success">
 
             <div class="container-fluid mt-3">
                 <h5>DIRECTIONS:</h5>
@@ -18,13 +18,13 @@
                     <div class="col-sm-2">
                         <input class="form-control form-control-sm" id="f_name" name="f_name" type="text" />
                     </div>
-                    <div class="form-group row">
-                        <label class="col-sm-5 col-form-label" for="m_name"><strong>Middle Name</strong></label>
-                        <input class="col-sm-6 form-control form-control-sm" id="m_name" name="m_name" type="text" />
+                    <div class="form-group col-sm-4 row">
+                        <label class="col-sm-4 col-form-label" for="m_name"><strong>Middle Name</strong></label>
+                        <input class="col-sm-7 form-control form-control-sm" id="m_name" name="m_name" type="text" />
                     </div>
-                    <div class="form-group row">
-                        <label class="col-sm-5 col-form-label" for="l_name"><strong>Last Name</strong></label>
-                        <input class="col-sm-7 form-control form-control-sm" id="l_name" name="l_name" type="text" />
+                    <div class="form-group col-sm-4 row">
+                        <label class="col-sm-3 col-form-label" for="l_name"><strong>Last Name</strong></label>
+                        <input class="col-sm-9 form-control form-control-sm" id="l_name" name="l_name" type="text" />
                     </div>
                 </div>
 
