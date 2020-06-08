@@ -33,6 +33,7 @@ $routes->setAutoRoute(true);
 $routes->get('/', 'Home::index');
 $routes->get('form', 'Form::index');
 $routes->get('logout', 'Logout::logout_user');
+$routes->get('add_alumnus', 'AddAlumnus::index');
 
 /**
  * --------------------------------------------------------------------

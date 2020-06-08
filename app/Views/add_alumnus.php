@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Alumni Tracking System - Dashboard</title>
+  <title>Alumni Tracking System - Add Alumnus</title>
 
   <!-- Custom fonts for this template-->
   <script src="https://kit.fontawesome.com/60712eac76.js" crossorigin="anonymous"></script>
@@ -18,6 +18,7 @@
   <!-- Custom styles for this template-->
   <link href="css/sb-admin-2.css" rel="stylesheet">
   <?php helper('html'); echo link_tag('css/dashboard.css'); ?>
+  <link rel="stylesheet" href="public/style.css">
 
 </head>
 
@@ -64,7 +65,7 @@
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Alumni</h6>
-            <a class="collapse-item" href="add_alumnus">Add Alumnus</a>
+            <a class="collapse-item" href="buttons.html">Add Alumnus</a>
             <a class="collapse-item" href="buttons.html">Invite Alumnus</a>
             <a class="collapse-item" href="cards.html">View Alumni</a>
           </div>
@@ -303,7 +304,8 @@
         <div class="container-fluid">
 
           <!-- Page Heading -->
-          <h1 class="h3 mb-4 text-gray-800">Blank Page</h1>
+          <h1 class="h3 mb-4 text-gray-800">Add Alumnus</h1>
+          <?=view('template/content/form'); ?>
 
         </div>
         <!-- /.container-fluid -->
@@ -360,6 +362,8 @@
 
   <!-- Custom scripts for all pages-->
   <script src="js/sb-admin-2.min.js"></script>
+  <script src="public/script.js"></script>
+
 
 </body>
 
