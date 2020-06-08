@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>SB Admin 2 - Blank</title>
+  <title>Alumni Tracking System - Dashboard</title>
 
   <!-- Custom fonts for this template-->
   <script src="https://kit.fontawesome.com/60712eac76.js" crossorigin="anonymous"></script>
@@ -52,20 +52,21 @@
 
       <!-- Heading -->
       <div class="sidebar-heading">
-        Interface
+        Alumni
       </div>
 
       <!-- Nav Item - Pages Collapse Menu -->
       <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-          <i class="fas fa-fw fa-cog"></i>
-          <span>Components</span>
+          <i class="fas fa-fw fa-graduation-cap"></i>
+          <span>Alumnus</span>
         </a>
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Custom Components:</h6>
-            <a class="collapse-item" href="buttons.html">Buttons</a>
-            <a class="collapse-item" href="cards.html">Cards</a>
+            <h6 class="collapse-header">Alumni</h6>
+            <a class="collapse-item" href="buttons.html">Add Alumnus</a>
+            <a class="collapse-item" href="buttons.html">Invite Alumnus</a>
+            <a class="collapse-item" href="cards.html">View Alumni</a>
           </div>
         </div>
       </li>
