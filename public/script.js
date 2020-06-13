@@ -24,7 +24,7 @@ function nextPrev(n) {
   // This function will figure out which tab to display
   var x = document.getElementsByClassName("ats-form-tab");
   // Exit the function if any field in the current tab is invalid:
-  //if (n == 1 && !validateForm()) return false;
+  if (n == 1 && !validateForm()) return false;
   // Hide the current tab:
   x[currentTab].style.display = "none";
   // Increase or decrease the current tab by 1:
@@ -40,11 +40,12 @@ function nextPrev(n) {
   scrollToTop();
 }
 
-/*
+
 function validateForm() {
+  console.log('executed');
   // This function deals with validation of the form fields
   var x, y, i, valid = true;
-  x = document.getElementsByClassName("tab");
+  x = document.getElementsByClassName("ats-form-tab");
   y = x[currentTab].getElementsByTagName("input");
   // A loop that checks every input field in the current tab:
   for (i = 0; i < y.length; i++) {
@@ -62,7 +63,7 @@ function validateForm() {
   }
   return valid; // return the valid status
 }
-*/
+
 
 function fixStepIndicator(n) {
   // This function removes the "active" class of all steps...
@@ -91,3 +92,17 @@ $(window).resize(function(){
       $('.sw-col-4').removeClass('col-auto col-2').addClass('col-4');
   }
 }).resize();//trigger the resize event on page load.
+
+// Add more elements on educational attainment section
+function AddMoreInputForms() {
+  var element = document.createElement('input');
+  element.setAttribute('class', 'form-control form-control-sm mb-2');
+  element.setAttribute('type', 'text');
+  var col = element.cloneNode(true);
+  var year = element.cloneNode(true);
+  var hon = element.cloneNode(true);
+  document.getElementById('degreeColumn').append(element);
+  document.getElementById('collegeColumn').append(col);
+  document.getElementById('yearColumn').append(year);
+  document.getElementById('awardColumn').append(hon);
+}

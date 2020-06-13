@@ -16,15 +16,15 @@
                 <div class="form-group row pt-1">
                     <label class="col-sm-2 col-form-label" for="f_name"><strong>First Name</strong></label>
                     <div class="col-sm-2">
-                        <input class="form-control form-control-sm" id="f_name" name="f_name" type="text" />
+                        <input class="form-control form-control-sm" id="f_name" name="f_name" type="text" required/>
                     </div>
                     <div class="form-group col-sm-4 row">
                         <label class="col-sm-4 col-form-label" for="m_name"><strong>Middle Name</strong></label>
-                        <input class="col-sm-7 form-control form-control-sm" id="m_name" name="m_name" type="text" />
+                        <input class="col-sm-7 form-control form-control-sm" id="m_name" name="m_name" type="text" required/>
                     </div>
                     <div class="form-group col-sm-4 row">
                         <label class="col-sm-3 col-form-label" for="l_name"><strong>Last Name</strong></label>
-                        <input class="col-sm-9 form-control form-control-sm" id="l_name" name="l_name" type="text" />
+                        <input class="col-sm-9 form-control form-control-sm" id="l_name" name="l_name" type="text" required/>
                     </div>
                 </div>
 
@@ -32,7 +32,7 @@
                 <div class="form-group row">
                     <label class="col-sm-2 col-form-label" for="curpos"><strong>Current Position</strong></label>
                     <div class="col-sm-10">
-                        <input class="form-control form-control-sm" id="curpos" type="text" />
+                        <input class="form-control form-control-sm" id="curpos" type="text" required/>
                     </div>
                 </div>
 
@@ -67,31 +67,31 @@
                     <div class="col-sm-10">
                         <div class="col-auto">
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="civstatus" id="single" value="1">
+                                <input class="form-check-input" type="radio" name="civstatus" id="single" value="single" checked>
                                 <label class="form-check-label" for="single">Single</label>
                             </div>
                         </div>
                         <div class="col-auto">
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="civstatus" id="separated" value="2">
+                                <input class="form-check-input" type="radio" name="civstatus" id="separated" value="separated">
                                 <label class="form-check-label" for="separated">Separated</label>
                             </div>
                         </div>
                         <div class="col-auto">
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="civstatus" id="widow_er" value="3">
+                                <input class="form-check-input" type="radio" name="civstatus" id="widow_er" value="widow">
                                 <label class="form-check-label" for="widow_er">Widow or Widower</label>
                             </div>
                         </div>
                         <div class="col-auto">
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="civstatus" id="married" value="4">
+                                <input class="form-check-input" type="radio" name="civstatus" id="married" value="married">
                                 <label class="form-check-label" for="married">Married</label>
                             </div>
                         </div>
                         <div class="col-auto">
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="civstatus" id="sparent" value="5">
+                                <input class="form-check-input" type="radio" name="civstatus" id="sparent" value="single_parent">
                                 <label class="form-check-label" for="sparent">Single Parent</label>
                             </div>
                         </div>
@@ -104,13 +104,13 @@
                     <div class="col-sm-10">
                         <div class="col-auto">
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="gender" id="male" value="1">
+                                <input class="form-check-input" type="radio" name="gender" id="male" value="male" checked>
                                 <label class="form-check-label" for="male">Male</label>
                             </div>
                         </div>
                         <div class="col-auto">
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="gender" id="female" value="2">
+                                <input class="form-check-input" type="radio" name="gender" id="female" value="female">
                                 <label class="form-check-label" for="female">Female</label>
                             </div>
                         </div>
@@ -123,7 +123,7 @@
                     <div class="col-sm-10">
                         <div class="col-auto">
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="age" id="21-25" value="1">
+                                <input class="form-check-input" type="radio" name="age" id="21-25" value="1" checked>
                                 <label class="form-check-label" for="21-25">21-25 years</label>
                             </div>
                         </div>
@@ -165,31 +165,32 @@
                     <label class="col-sm-2 col-form-label"><strong>Educational Attainment (Include Baccalaureate and Post Gradeuate Degrees)</strong></label>
                     <div class="col-sm-10">
                         <div class="row">
-                            <div class="col-auto text-center">
+                            <div class="col-auto text-center" id="degreeColumn">
                                 <label>Degree(s) & Specialization(s)</label>
-                                <input class="form-control form-control-sm" type="text">
-                                <input class="form-control form-control-sm my-2" type="text">
-                                <input class="form-control form-control-sm" type="text">
+                                <input class="form-control form-control-sm mb-2" id="deg-spe-1" type="text">
+                                <input class="form-control form-control-sm mb-2" id="deg-spe-2" type="text">
+                                <input class="form-control form-control-sm mb-2" id="deg-spe-3" type="text">
                             </div>
-                            <div class="col-auto text-center">
+                            <div class="col-auto text-center" id="collegeColumn">
                                 <label>College or University</label>
-                                <input class="form-control form-control-sm" type="text">
-                                <input class="form-control form-control-sm my-2" type="text">
-                                <input class="form-control form-control-sm" type="text">
+                                <input class="form-control form-control-sm mb-2" id="college-1" type="text">
+                                <input class="form-control form-control-sm mb-2" id="college-2" type="text">
+                                <input class="form-control form-control-sm mb-2" id="college-3" type="text">
                             </div>
-                            <div class="col-auto text-center">
+                            <div class="col-auto text-center" id="yearColumn">
                                 <label>Year Graduated</label>
-                                <input class="form-control form-control-sm" type="text">
-                                <input class="form-control form-control-sm my-2" type="text">
-                                <input class="form-control form-control-sm" type="text">
+                                <input class="form-control form-control-sm mb-2" id="year-grad-1" type="text">
+                                <input class="form-control form-control-sm mb-2" id="year-grad-2" type="text">
+                                <input class="form-control form-control-sm mb-2" id="year-grad-3" type="text">
                             </div>
-                            <div class="col-auto text-center">
+                            <div class="col-auto text-center" id="awardColumn">
                                 <label>Honor(s) or Award(s)</label>
-                                <input class="form-control form-control-sm" type="text">
-                                <input class="form-control form-control-sm my-2" type="text">
-                                <input class="form-control form-control-sm" type="text">
+                                <input class="form-control form-control-sm mb-2" id="hon-awa-1" type="text">
+                                <input class="form-control form-control-sm mb-2" id="hon-awa-2" type="text">
+                                <input class="form-control form-control-sm mb-2" id="hon-awa-3" type="text">
                             </div>
                         </div>
+                        <button type="button" class="btn btn-primary" onclick="AddMoreInputForms()">Add More</button>
                     </div>
                 </div>
 
