@@ -32,7 +32,7 @@
                 <div class="form-group row">
                     <label class="col-sm-2 col-form-label" for="curpos"><strong>Current Position</strong></label>
                     <div class="col-sm-10">
-                        <input class="form-control form-control-sm" id="curpos" type="text" required/>
+                        <input class="form-control form-control-sm" id="curpos" name="curpos" type="text" required/>
                     </div>
                 </div>
 
@@ -43,19 +43,19 @@
                         <div class="form-group row">
                             <label class="col-sm-2" for="telno">Telephone No.</label>
                             <div class="col-sm-10">
-                                <input class="form-control form-control-sm" id="telno" type="text" />
+                                <input class="form-control form-control-sm" id="telno" name="telno" type="text" />
                             </div>
                         </div>
                         <div class="form-group row">
                             <label class="col-sm-2" for="mobile">Mobile No.</label>
                             <div class="col-sm-10">
-                                <input class="form-control form-control-sm" id="mobile" type="text" />
+                                <input class="form-control form-control-sm" id="mobile" name="mobile" type="text" />
                             </div>
                         </div>
                         <div class="form-group row" style="margin-bottom:0;">
                             <label class="col-sm-2" for="email">Email Address</label>
                             <div class="col-sm-10">
-                                <input class="form-control form-control-sm" id="email" type="text" />
+                                <input class="form-control form-control-sm" id="email" name="email" type="text" />
                             </div>
                         </div>
                     </div>
