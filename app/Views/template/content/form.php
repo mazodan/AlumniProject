@@ -167,27 +167,27 @@
                         <div class="row">
                             <div class="col-auto text-center" id="degreeColumn">
                                 <label>Degree(s) & Specialization(s)</label>
-                                <input class="form-control form-control-sm mb-2" id="deg-spe-1" type="text">
-                                <input class="form-control form-control-sm mb-2" id="deg-spe-2" type="text">
-                                <input class="form-control form-control-sm mb-2" id="deg-spe-3" type="text">
+                                <input class="form-control form-control-sm mb-2" name="deg[]" type="text">
+                                <input class="form-control form-control-sm mb-2" name="deg[]" type="text">
+                                <input class="form-control form-control-sm mb-2" name="deg[]" type="text">
                             </div>
                             <div class="col-auto text-center" id="collegeColumn">
                                 <label>College or University</label>
-                                <input class="form-control form-control-sm mb-2" id="college-1" type="text">
-                                <input class="form-control form-control-sm mb-2" id="college-2" type="text">
-                                <input class="form-control form-control-sm mb-2" id="college-3" type="text">
+                                <input class="form-control form-control-sm mb-2" name="col[]" type="text">
+                                <input class="form-control form-control-sm mb-2" name="col[]" type="text">
+                                <input class="form-control form-control-sm mb-2" name="col[]" type="text">
                             </div>
                             <div class="col-auto text-center" id="yearColumn">
                                 <label>Year Graduated</label>
-                                <input class="form-control form-control-sm mb-2" id="year-grad-1" type="text">
-                                <input class="form-control form-control-sm mb-2" id="year-grad-2" type="text">
-                                <input class="form-control form-control-sm mb-2" id="year-grad-3" type="text">
+                                <input class="form-control form-control-sm mb-2" name="year[]" type="text">
+                                <input class="form-control form-control-sm mb-2" name="year[]" type="text">
+                                <input class="form-control form-control-sm mb-2" name="year[]" type="text">
                             </div>
                             <div class="col-auto text-center" id="awardColumn">
                                 <label>Honor(s) or Award(s)</label>
-                                <input class="form-control form-control-sm mb-2" id="hon-awa-1" type="text">
-                                <input class="form-control form-control-sm mb-2" id="hon-awa-2" type="text">
-                                <input class="form-control form-control-sm mb-2" id="hon-awa-3" type="text">
+                                <input class="form-control form-control-sm mb-2" name="award[]" type="text">
+                                <input class="form-control form-control-sm mb-2" name="award[]" type="text">
+                                <input class="form-control form-control-sm mb-2" name="award[]" type="text">
                             </div>
                         </div>
                         <button type="button" class="btn btn-primary" onclick="AddMoreInputForms()">Add More</button>
