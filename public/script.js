@@ -95,13 +95,30 @@ $(window).resize(function(){
 
 // Add more elements on educational attainment section
 function AddMoreInputForms() {
-  var element = document.createElement('input');
-  element.setAttribute('class', 'form-control form-control-sm mb-2');
-  element.setAttribute('type', 'text');
-  var col = element.cloneNode(true);
-  var year = element.cloneNode(true);
-  var hon = element.cloneNode(true);
-  document.getElementById('degreeColumn').append(element);
+  // Creates element dynamically
+  var degree = document.createElement('input');
+  // Sets default attributes
+  degree.setAttribute('class', 'form-control form-control-sm mb-2');
+  degree.setAttribute('type', 'text');
+  degree.setAttribute('name', 'deg[]');
+  // Gets default attribute values and clones it.
+  var defaultClass = degree.getAttributeNode('class');
+  var defaultType = degree.getAttributeNode('type');
+  // Sets the cloned attribute to new inputs, very verbose, blame javascript
+  var col = document.createElement('input');
+  col.setAttributeNode(defaultClass.cloneNode(true));
+  col.setAttributeNode(defaultType.cloneNode(true));
+  col.setAttribute('name', 'col[]');
+  var year = document.createElement('input');
+  year.setAttributeNode(defaultClass.cloneNode(true));
+  year.setAttributeNode(defaultType.cloneNode(true));
+  year.setAttribute('name', 'year[]');
+  var hon = document.createElement('input');
+  hon.setAttributeNode(defaultClass.cloneNode(true));
+  hon.setAttributeNode(defaultType.cloneNode(true));
+  hon.setAttribute('name', 'award[]');
+  // Appends new elements to document
+  document.getElementById('degreeColumn').append(degree);
   document.getElementById('collegeColumn').append(col);
   document.getElementById('yearColumn').append(year);
   document.getElementById('awardColumn').append(hon);
