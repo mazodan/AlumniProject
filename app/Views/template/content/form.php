@@ -32,7 +32,7 @@
                 <div class="form-group row">
                     <label class="col-sm-2 col-form-label" for="curpos"><strong>Current Position</strong></label>
                     <div class="col-sm-10">
-                        <input class="form-control form-control-sm" id="curpos" name="curpos" type="text" required/>
+                        <input class="form-control form-control-sm" id="curpos" name="curpos" type="text"/>
                     </div>
                 </div>
 
@@ -120,43 +120,8 @@
                 <!--- Age --->
                 <div class="form-group row">
                     <label class="col-sm-2 col-form-label"><strong>Age</strong></label>
-                    <div class="col-sm-10">
-                        <div class="col-auto">
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="age" id="21-25" value="1" checked>
-                                <label class="form-check-label" for="21-25">21-25 years</label>
-                            </div>
-                        </div>
-                        <div class="col-auto">
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="age" id="26-30" value="2">
-                                <label class="form-check-label" for="26-30">26-30 years</label>
-                            </div>
-                        </div>
-                        <div class="col-auto">
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="age" id="31-35" value="3">
-                                <label class="form-check-label" for="31-35">31-35 years</label>
-                            </div>
-                        </div>
-                        <div class="col-auto">
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="age" id="36-40" value="4">
-                                <label class="form-check-label" for="36-40">36-40 years</label>
-                            </div>
-                        </div>
-                        <div class="col-auto">
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="age" id="41-45" value="5">
-                                <label class="form-check-label" for="41-45">41-45 years</label>
-                            </div>
-                        </div>
-                        <div class="col-auto">
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="age" id="46above" value="6">
-                                <label class="form-check-label" for="46above">46 years and above</label>
-                            </div>
-                        </div>
+                    <div class="col-auto">
+                        <input class="form-control form-control-sm" type="number" min="15">
                     </div>
                 </div>
 

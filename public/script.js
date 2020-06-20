@@ -47,20 +47,80 @@ function validateForm() {
   var x, y, i, valid = true;
   x = document.getElementsByClassName("ats-form-tab");
   y = x[currentTab].getElementsByTagName("input");
-  // A loop that checks every input field in the current tab:
-  for (i = 0; i < y.length; i++) {
-    // If a field is empty...
-    if (y[i].value == "") {
-      // add an "invalid" class to the field:
-      y[i].className += " invalid";
-      // and set the current valid status to false
+  
+  // Revising validation methods per page
+  if (currentTab === 0) {
+    // check tab 0
+    // Regular expressions for valid values
+    var regExpNumbers = RegExp('^[0-9-]+$');
+    var regExpEmail = RegExp('^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$');
+
+    var telno = document.getElementById('telno');
+    var mobile = document.getElementById('mobile');
+    var emailInput = document.getElementById('email');
+    // At lease one input in the Contact numbers set
+    if (telno.value != '' || mobile.value != '' || emailInput.value != '') {
+      // Make all input elements valid before checking
+      telno.setCustomValidity('');
+      mobile.setCustomValidity('');
+      emailInput.setCustomValidity('');
+
+      // For each input element with values, validate
+      if (telno.value != '') {
+        if (regExpNumbers.test(telno.value) === false) {
+          valid = false;
+          telno.setCustomValidity('Wrong Telephone Number Format');
+        } else {
+          telno.setCustomValidity('');
+        }
+      }
+
+      if (mobile.value != '') {
+        if (regExpNumbers.test(mobile.value) === false) {
+          valid = false;
+          mobile.setCustomValidity('Wrong Mobile Number Format');
+        } else {
+          mobile.setCustomValidity('');
+        }
+      }
+
+      if (emailInput.value != '') {
+        if(regExpEmail.test(emailInput.value) === false) {
+          valid = false;
+          emailInput.setCustomValidity('Email format invalid');
+        } else {
+          emailInput.setCustomValidity('');
+        }
+      }
+
+      console.log('contact info valid');
+
+
+    } else {
       valid = false;
+      console.log('all inputs contact info invalid');
     }
   }
+
+  
+  // // A loop that checks every input field in the current tab:
+  // for (i = 0; i < y.length; i++) {
+  //   // If a field is empty...
+  //   if (y[i].value == "") {
+  //     // add an "invalid" class to the field:
+  //     y[i].className += " invalid";
+  //     // and set the current valid status to false
+  //     valid = false;
+  //   }
+  // }
+
+
   // If the valid status is true, mark the step as finished and valid:
   if (valid) {
     document.getElementsByClassName("step")[currentTab].className += " finish";
   }
+  // For debugging purposes
+  valid = false;
   return valid; // return the valid status
 }
 
