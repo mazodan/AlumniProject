@@ -333,7 +333,7 @@
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" name="" id="pe" value="1" disabled />
                                 <label class="form-check-label" for="pe">Others (Please specify)</label>
-                                <input class="form-control form-control-sm" type="text" name="" id="">
+                                <input class="form-control form-control-sm" type="text" name="" id="" disabled />
                             </div>
                         </div>
                     </div>
