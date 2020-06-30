@@ -121,7 +121,7 @@
                 <div class="form-group row">
                     <label class="col-sm-2 col-form-label"><strong>Age</strong></label>
                     <div class="col-auto">
-                        <input class="form-control form-control-sm" type="number" min="15">
+                        <input class="form-control form-control-sm" type="number" min="15" required />
                     </div>
                 </div>
 

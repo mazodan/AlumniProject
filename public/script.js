@@ -47,6 +47,20 @@ function validateForm() {
   var x, y, i, valid = true;
   x = document.getElementsByClassName("ats-form-tab");
   y = x[currentTab].getElementsByTagName("input");
+
+
+   // A loop that checks every input field in the current tab:
+   for (i = 0; i < y.length; i++) {
+    // If a field is empty with a required value
+    if (y[i].value == "" && y[i].required == true) {
+      // Use set custom validity to false
+      y[i].setCustomValidity('Please insert data/value');
+      // and set the current valid status to false
+      valid = false;
+    } else {
+      y[i].setCustomValidity('');
+    }
+  }
   
   // Revising validation methods per page
   if (currentTab === 0) {
@@ -93,26 +107,66 @@ function validateForm() {
         }
       }
 
-      console.log('contact info valid');
-
-
     } else {
       valid = false;
-      console.log('all inputs contact info invalid');
     }
+
+    // Check if all inputs on educational attainment are all filled up, only for inputs values
+    // ignore all blanked inputs on each row
+
+    // Get all generated inputs on each column
+    var degRows = document.getElementById('degreeColumn').getElementsByTagName('input');
+    var collRows = document.getElementById('collegeColumn').getElementsByTagName('input');
+    var yearRows = document.getElementById('yearColumn').getElementsByTagName('input');
+    var awardRows = document.getElementById('awardColumn').getElementsByTagName('input');
+
+    var numberOfRows = degRows.length;
+
+    for (var i = 0; i < numberOfRows; i++) {
+      // Checks if all values are null or filled
+      if ((degRows[i].value === '' && collRows[i].value === '' && yearRows[i].value === '' && awardRows[i].value === '') || (degRows[i].value !== '' && collRows[i].value !== '' && yearRows[i].value !== '' && awardRows[i].value !== '')) {
+        // If valid, remove any existing setCustomValidity values
+        degRows[i].setCustomValidity('');
+        collRows[i].setCustomValidity('');
+        yearRows[i].setCustomValidity('');
+        awardRows[i].setCustomValidity('');
+      } else {
+        // Find offending input element and make that element invalid
+        if (degRows[i].value === '') {
+          degRows[i].setCustomValidity('Please enter the degree/specialization');
+        }
+        if (collRows[i].value === '') {
+          collRows[i].setCustomValidity('Please enter the college or university attended');
+        }
+        if (yearRows[i].value === '') {
+          yearRows[i].setCustomValidity('Plase enter the year graduated');
+        }
+        if (awardRows[i].value === '') {
+          awardRows[i].setCustomValidity('Please enter the honors or awards earned')
+        }
+
+        valid = false;
+      }
+    }
+
+    // Check if any values in the educational attainment section are filled at all
+    var blankCounter = 0;
+    for (var i = 0; i < numberOfRows; i++) {
+      if (degRows[i].value === '') {
+        blankCounter++;
+      }
+    }
+
+    // If user has not entered any values in the educational attainment section
+    // Make it invalid
+    if (blankCounter === numberOfRows) {
+      valid = false;
+    }
+
   }
 
   
-  // // A loop that checks every input field in the current tab:
-  // for (i = 0; i < y.length; i++) {
-  //   // If a field is empty...
-  //   if (y[i].value == "") {
-  //     // add an "invalid" class to the field:
-  //     y[i].className += " invalid";
-  //     // and set the current valid status to false
-  //     valid = false;
-  //   }
-  // }
+ 
 
 
   // If the valid status is true, mark the step as finished and valid:
@@ -120,7 +174,6 @@ function validateForm() {
     document.getElementsByClassName("step")[currentTab].className += " finish";
   }
   // For debugging purposes
-  valid = false;
   return valid; // return the valid status
 }
 
