@@ -171,24 +171,24 @@
                     <div class="row">
                         <div class="col-auto">
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="estat" id="q1y" value="1">
+                                <input class="form-check-input" type="radio" name="estat" id="q1y" value="yes">
                                 <label class="form-check-label" for="q1y">Yes</label>
                             </div>
                         </div>
                         <div class="col-auto">
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="estat" id="q1no" value="1">
+                                <input class="form-check-input" type="radio" name="estat" id="q1no" value="no" />
                                 <label class="form-check-label" for="q1no">No</label>
                             </div>
                         </div>
                         <div class="col-auto">
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="estat" id="ne" value="1">
+                                <input class="form-check-input" type="radio" name="estat" id="ne" value="never_employed" checked />
                                 <label class="form-check-label" for="ne">Never Employed</label>
                             </div>
                         </div>
                     </div>
-                    <p style="margin-bottom:0;">If NO or NEVER BEEN EMPLOYER, proceed to Question 2.</p>
+                    <p style="margin-bottom:0;">If NO or NEVER BEEN EMPLOYED, proceed to Question 2.</p>
                     <p>If YES, proceed to Question 3 to 9.</p>
                 </div>
 
@@ -261,13 +261,13 @@
                     <div class="form-group row">
                         <label class="col-sm-2 col-form-label">Name of Organzation</label>
                         <div class="col-sm-10">
-                            <input class="form-control form-control-sm" type="text" name="">
+                            <input class="form-control form-control-sm" type="text" name="" disabled />
                         </div>
                     </div>
                     <div class="form-group row">
                         <label class="col-sm-2 col-form-label">Address</label>
                         <div class="col-sm-10">
-                            <input class="form-control form-control-sm" type="text" name="">
+                            <input class="form-control form-control-sm" type="text" name="" disabled />
                         </div>
                     </div>
                 </div>
@@ -278,13 +278,13 @@
                     <div class="row">
                         <div class="col-auto">
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="pow" id="q4loc" value="1">
+                                <input class="form-check-input" type="radio" name="pow" id="q4loc" value="1" disabled />
                                 <label class="form-check-label" for="q4loc">Local</label>
                             </div>
                         </div>
                         <div class="col-auto">
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="pow" id="q4abr" value="1">
+                                <input class="form-check-input" type="radio" name="pow" id="q4abr" value="1" disabled />
                                 <label class="form-check-label" for="q4abr">Abroad</label>
                             </div>
                         </div>
@@ -300,11 +300,11 @@
                         </div>
                         <div class="col">
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" name="" id="pe" value="1">
+                                <input class="form-check-input" type="checkbox" name="" id="pe" value="1" disabled />
                                 <label class="form-check-label" for="pe">Public Enterprise</label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" name="" id="pe" value="1">
+                                <input class="form-check-input" type="checkbox" name="" id="pe" value="1" disabled />
                                 <label class="form-check-label" for="pe">Educational Institution</label>
                             </div>
                         </div>
@@ -315,23 +315,23 @@
                         </div>
                         <div class="col">
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" name="" id="pe" value="1">
+                                <input class="form-check-input" type="checkbox" name="" id="pe" value="1" disabled />
                                 <label class="form-check-label" for="pe">Private Enterprise</label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" name="" id="pe" value="1">
+                                <input class="form-check-input" type="checkbox" name="" id="pe" value="1" disabled />
                                 <label class="form-check-label" for="pe">Non-Profit Organization/Non-Government Organization</label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" name="" id="pe" value="1">
+                                <input class="form-check-input" type="checkbox" name="" id="pe" value="1" disabled />
                                 <label class="form-check-label" for="pe">Internal Organization</label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" name="" id="pe" value="1">
+                                <input class="form-check-input" type="checkbox" name="" id="pe" value="1" disabled />
                                 <label class="form-check-label" for="pe">Self-employed</label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" name="" id="pe" value="1">
+                                <input class="form-check-input" type="checkbox" name="" id="pe" value="1" disabled />
                                 <label class="form-check-label" for="pe">Others (Please specify)</label>
                                 <input class="form-control form-control-sm" type="text" name="" id="">
                             </div>
@@ -342,7 +342,7 @@
                 <!--- Q6 --->
                 <div class="form-group">
                     <label><strong>6. Present occupation (Ex. GRade School Teacher, Electrical Engineer, Self-employed)</strong></label>
-                    <input class="form-control form-control-sm" type="text" name="" id="">
+                    <input class="form-control form-control-sm" type="text" name="" id="" disabled />
                 </div>
 
                 <!--- Q7 --->
@@ -351,13 +351,13 @@
                     <div class="row">
                         <div class="col-2 sw-col-4">
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="pes" id="regu" value="1">
+                                <input class="form-check-input" type="radio" name="pes" id="regu" value="1" disabled />
                                 <label class="form-check-label" for="regu">Regular</label>
                             </div>
                         </div>
                         <div class="col-auto">
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="pes" id="contr" value="1">
+                                <input class="form-check-input" type="radio" name="pes" id="contr" value="1" disabled />
                                 <label class="form-check-label" for="contr">Contractual</label>
                             </div>
                         </div>
@@ -365,13 +365,13 @@
                     <div class="row">
                         <div class="col-2 sw-col-4">
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="pes" id="temp" value="1">
+                                <input class="form-check-input" type="radio" name="pes" id="temp" value="1" disabled />
                                 <label class="form-check-label" for="temp">Temporary</label>
                             </div>
                         </div>
                         <div class="col-auto">
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="pes" id="se" value="1">
+                                <input class="form-check-input" type="radio" name="pes" id="se" value="1" disabled />
                                 <label class="form-check-label" for="se">Self-employed</label>
                             </div>
                         </div>
@@ -379,7 +379,7 @@
                     <div class="row">
                         <div class="col-2">
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="pes" id="cas" value="1">
+                                <input class="form-check-input" type="radio" name="pes" id="cas" value="1" disabled />
                                 <label class="form-check-label" for="cas">Casual</label>
                             </div>
                         </div>
@@ -389,7 +389,7 @@
                 <!--- Q8 --->
                 <div class="form-group">
                     <label><strong>8. If self-employed, what skills acquired in college were you able to apply in your work?</strong></label>
-                    <input class="form-control form-control-sm" type="text" name="" id="">
+                    <input class="form-control form-control-sm" type="text" name="" id="" disabled />
                 </div>
 
                 <!--- Q9 --->
@@ -398,13 +398,13 @@
                     <div class="row">
                         <div class="col-5">
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" name="typb" id="grb" value="1">
+                                <input class="form-check-input" type="checkbox" name="typb" id="grb" value="1" disabled />
                                 <label class="form-check-label" for="grb">Grains business</label>
                             </div>
                         </div>
                         <div class="col-auto">
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" name="typb" id="reb" value="1">
+                                <input class="form-check-input" type="checkbox" name="typb" id="reb" value="1" disabled />
                                 <label class="form-check-label" for="reb">Real Estate business</label>
                             </div>
                         </div>
@@ -414,13 +414,13 @@
                     <div class="row">
                         <div class="col-5">
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" name="typb" id="farm" value="1">
+                                <input class="form-check-input" type="checkbox" name="typb" id="farm" value="1" disabled />
                                 <label class="form-check-label" for="farm">Farming</label>
                             </div>
                         </div>
                         <div class="col-auto">
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" name="typb" id="gs" value="1">
+                                <input class="form-check-input" type="checkbox" name="typb" id="gs" value="1" disabled />
                                 <label class="form-check-label" for="gs">Grocery/Sari-sari store</label>
                             </div>
                         </div>
@@ -429,13 +429,13 @@
                     <div class="row">
                         <div class="col-5">
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" name="typb" id="food" value="1">
+                                <input class="form-check-input" type="checkbox" name="typb" id="food" value="1" disabled />
                                 <label class="form-check-label" for="food">Food business (eatery, restaurant, etc)</label>
                             </div>
                         </div>
                         <div class="col-auto">
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" name="typb" id="ar" value="1">
+                                <input class="form-check-input" type="checkbox" name="typb" id="ar" value="1" disabled />
                                 <label class="form-check-label" for="ar">Animal raising (poultry, piggery, etc)</label>
                             </div>
                         </div>
@@ -444,13 +444,13 @@
                     <div class="row">
                         <div class="col-5">
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" name="typb" id="tb" value="1">
+                                <input class="form-check-input" type="checkbox" name="typb" id="tb" value="1" disabled />
                                 <label class="form-check-label" for="tb">Trade business (buy and sell)</label>
                             </div>
                         </div>
                         <div class="col">
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" name="typb" id="q9oth" value="1">
+                                <input class="form-check-input" type="checkbox" name="typb" id="q9oth" value="1" disabled />
                                 <label class="form-check-label" for="q9oth">Others (Please specify)</label>
                             </div>
                         </div>
@@ -459,12 +459,12 @@
                     <div class="row">
                         <div class="col-5">
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" name="typb" id="cdp" value="1">
+                                <input class="form-check-input" type="checkbox" name="typb" id="cdp" value="1" disabled />
                                 <label class="form-check-label" for="cdp">Construction, design, programming</label>
                             </div>
                         </div>
                         <div class="col">
-                            <input class="form-control form-control-sm" type="text" name="typb" id="otherps" value="">
+                            <input class="form-control form-control-sm" type="text" name="typb" id="otherps" value="" disabled />
                         </div>
                     </div>
                 </div>
