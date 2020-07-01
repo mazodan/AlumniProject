@@ -236,3 +236,80 @@ function AddMoreInputForms() {
   document.getElementById('yearColumn').append(year);
   document.getElementById('awardColumn').append(hon);
 }
+
+
+// Create an event listener for the checkbox (Present employment)
+var estatRadios = document.querySelectorAll('input[type=radio][name=estat]');
+
+function changeHandler(event) {
+  if (this.value == 'yes') {
+    // Enable some form elements related to employment
+    var pres_emp = document.getElementById('pres_emp_form').getElementsByTagName('input');
+    for (var element of pres_emp) {
+      element.removeAttribute('disabled');
+    }
+
+    var place_of_work = document.getElementById('place_of_work').getElementsByTagName('input');
+    for (var element of place_of_work) {
+      element.removeAttribute('disabled');
+    }
+    // Autocheck local
+    document.getElementById('pow_loc').checked = true;
+
+    var org_pres_emp_chklst = document.getElementById('org_pres_emp_chklst').getElementsByTagName('input');
+    for (var element of org_pres_emp_chklst) {
+      element.removeAttribute('disabled');
+    }
+
+    document.getElementById('pres_occup').removeAttribute('disabled');
+
+    var pres_emp_stat = document.getElementById('pres_emp_stat').getElementsByTagName('input');
+    for (var element of pres_emp_stat) {
+      element.removeAttribute('disabled');
+    }
+    document.getElementById('regu').checked = true;
+
+    document.getElementById('self_emp_skills').removeAttribute('disabled');
+
+    var self_emp_chklst = document.getElementById('self_emp_chklst').getElementsByTagName('input');
+    for (var element of self_emp_chklst) {
+      element.removeAttribute('disabled');
+    }
+
+  } else if (this.value == 'no') {
+    // Disable some form elements related to employment
+    var pres_emp = document.getElementById('pres_emp_form').getElementsByTagName('input');
+    for (var element of pres_emp) {
+      element.setAttribute('disabled', 'true');
+    }
+
+    var place_of_work = document.getElementById('place_of_work').getElementsByTagName('input');
+    for (var element of place_of_work) {
+      element.setAttribute('disabled', 'true');
+    }
+
+    var org_pres_emp_chklst = document.getElementById('org_pres_emp_chklst').getElementsByTagName('input');
+    for (var element of org_pres_emp_chklst) {
+      element.setAttribute('disabled', 'true');
+    }
+
+    document.getElementById('pres_occup').setAttribute('disabled','true');
+
+    var pres_emp_stat = document.getElementById('pres_emp_stat').getElementsByTagName('input');
+    for (var element of pres_emp_stat) {
+      element.setAttribute('disabled', 'true');
+    }
+
+    document.getElementById('self_emp_skills').setAttribute('disabled','true');
+
+    var self_emp_chklst = document.getElementById('self_emp_chklst').getElementsByTagName('input');
+    for (var element of self_emp_chklst) {
+      element.setAttribute('disabled', 'true');
+    }
+
+  }
+}
+
+Array.prototype.forEach.call(estatRadios, function(radio) {
+  radio.addEventListener('change', changeHandler);
+});

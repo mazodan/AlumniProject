@@ -171,19 +171,19 @@
                     <div class="row">
                         <div class="col-auto">
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="estat" id="q1y" value="yes">
+                                <input class="form-check-input" type="radio" name="estat" id="emp_yes" value="yes">
                                 <label class="form-check-label" for="q1y">Yes</label>
                             </div>
                         </div>
                         <div class="col-auto">
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="estat" id="q1no" value="no" />
+                                <input class="form-check-input" type="radio" name="estat" id="emp_no" value="no" />
                                 <label class="form-check-label" for="q1no">No</label>
                             </div>
                         </div>
                         <div class="col-auto">
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="estat" id="ne" value="never_employed" checked />
+                                <input class="form-check-input" type="radio" name="estat" id="emp_never" value="never_employed" checked />
                                 <label class="form-check-label" for="ne">Never Employed</label>
                             </div>
                         </div>
@@ -256,35 +256,35 @@
                 </div>
 
                 <!--- Q3 --->
-                <div class="form-group">
+                <div class="form-group" id="pres_emp_form">
                     <label><strong>3. Present Employment</strong></label>
                     <div class="form-group row">
                         <label class="col-sm-2 col-form-label">Name of Organzation</label>
                         <div class="col-sm-10">
-                            <input class="form-control form-control-sm" type="text" name="" disabled />
+                            <input class="form-control form-control-sm" type="text" name="pres_org_name" disabled />
                         </div>
                     </div>
                     <div class="form-group row">
                         <label class="col-sm-2 col-form-label">Address</label>
                         <div class="col-sm-10">
-                            <input class="form-control form-control-sm" type="text" name="" disabled />
+                            <input class="form-control form-control-sm" type="text" name="pres_emp_add" disabled />
                         </div>
                     </div>
                 </div>
 
                 <!--- Q4 --->
-                <div class="form-group">
+                <div class="form-group" id="place_of_work">
                     <label><strong>4. Place of work</strong></label>
                     <div class="row">
                         <div class="col-auto">
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="pow" id="q4loc" value="1" disabled />
+                                <input class="form-check-input" type="radio" name="pow" id="pow_loc" value="1" disabled />
                                 <label class="form-check-label" for="q4loc">Local</label>
                             </div>
                         </div>
                         <div class="col-auto">
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="pow" id="q4abr" value="1" disabled />
+                                <input class="form-check-input" type="radio" name="pow" id="pow_ovr" value="1" disabled />
                                 <label class="form-check-label" for="q4abr">Abroad</label>
                             </div>
                         </div>
@@ -292,7 +292,7 @@
                 </div>
 
                 <!--- Q5 --->
-                <div class="form-group">
+                <div class="form-group" id="org_pres_emp_chklst">
                     <label><strong>5. Type of organization presently employed in. (Chech one or as many as applicable)</strong></label>
                     <div class="row">
                         <div class="col-2 sw-col-4">
@@ -342,11 +342,11 @@
                 <!--- Q6 --->
                 <div class="form-group">
                     <label><strong>6. Present occupation (Ex. GRade School Teacher, Electrical Engineer, Self-employed)</strong></label>
-                    <input class="form-control form-control-sm" type="text" name="" id="" disabled />
+                    <input class="form-control form-control-sm" type="text" name="" id="pres_occup" disabled />
                 </div>
 
                 <!--- Q7 --->
-                <div class="form-group">
+                <div class="form-group" id="pres_emp_stat">
                     <label><strong>7. Present employment status</strong></label>
                     <div class="row">
                         <div class="col-2 sw-col-4">
@@ -389,11 +389,11 @@
                 <!--- Q8 --->
                 <div class="form-group">
                     <label><strong>8. If self-employed, what skills acquired in college were you able to apply in your work?</strong></label>
-                    <input class="form-control form-control-sm" type="text" name="" id="" disabled />
+                    <input class="form-control form-control-sm" type="text" name="" id="self_emp_skills" disabled />
                 </div>
 
                 <!--- Q9 --->
-                <div class="form-group">
+                <div class="form-group" id="self_emp_chklst">
                     <label><strong>9. If self-employed, what type of business are you engaged in? (Check one or as many as applicable)</strong></label>
                     <div class="row">
                         <div class="col-5">
