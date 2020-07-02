@@ -249,6 +249,12 @@ function changeHandler(event) {
       element.removeAttribute('disabled');
     }
 
+    // Disable reasons for unemployment
+    var unemp_reasons = document.getElementById('unemp_reason_chklst').getElementsByTagName('input');
+    for (var element of unemp_reasons) {
+      element.setAttribute('disabled','true');
+    }
+
     var place_of_work = document.getElementById('place_of_work').getElementsByTagName('input');
     for (var element of place_of_work) {
       element.removeAttribute('disabled');
@@ -278,13 +284,18 @@ function changeHandler(event) {
 
     enableOtherInputField(document.getElementById('org_type_other_text'), document.getElementById('org_type_other_chkbox'));
 
-    enableOtherInputField(document.getElementById('selfemp_bustype_other_text'), document.getElementById('selfemp_bustype_other_chkbox'))
+    enableOtherInputField(document.getElementById('selfemp_bustype_other_text'), document.getElementById('selfemp_bustype_other_chkbox'));
 
-  } else if (this.value == 'no') {
+  } else if (this.value == 'no' || this.value == 'never_employed') {
     // Disable some form elements related to employment
     var pres_emp = document.getElementById('pres_emp_form').getElementsByTagName('input');
     for (var element of pres_emp) {
       element.setAttribute('disabled', 'true');
+    }
+
+    var unemp_reasons = document.getElementById('unemp_reason_chklst').getElementsByTagName('input');
+    for (var element of unemp_reasons) {
+      element.removeAttribute('disabled');
     }
 
     var place_of_work = document.getElementById('place_of_work').getElementsByTagName('input');

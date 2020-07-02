@@ -193,7 +193,7 @@
                 </div>
 
                 <!--- Q2 --->
-                <div class="form-group">
+                <div class="form-group" id="unemp_reason_chklst">
                     <label><strong>2. Please state the reason(s) why you are not yet employed. You may check more than one answer.</strong></label>
                     <div class="row">
                         <div class="col-5">
