@@ -276,6 +276,10 @@ function changeHandler(event) {
       element.removeAttribute('disabled');
     }
 
+    enableOtherInputField(document.getElementById('org_type_other_text'), document.getElementById('org_type_other_chkbox'));
+
+    enableOtherInputField(document.getElementById('selfemp_bustype_other_text'), document.getElementById('selfemp_bustype_other_chkbox'))
+
   } else if (this.value == 'no') {
     // Disable some form elements related to employment
     var pres_emp = document.getElementById('pres_emp_form').getElementsByTagName('input');
@@ -313,3 +317,28 @@ function changeHandler(event) {
 Array.prototype.forEach.call(estatRadios, function(radio) {
   radio.addEventListener('change', changeHandler);
 });
+
+// Check state of the checkbox when employed value changes
+function enableOtherInputField(element, checkbox) {
+  if (checkbox.checked == true) {
+    element.removeAttribute('disabled');
+  } else {
+    element.setAttribute('disabled', 'true');
+  }
+}
+
+function handleOrgTypeOther(checkbox) {
+  if (checkbox.checked == true) {
+    document.getElementById('org_type_other_text').removeAttribute('disabled');
+  } else {
+    document.getElementById('org_type_other_text').setAttribute('disabled', 'true');
+  }
+}
+
+function handleBustypeOther(checkbox) {
+  if (checkbox.checked == true) {
+    document.getElementById('selfemp_bustype_other_text').removeAttribute('disabled');
+  } else {
+    document.getElementById('selfemp_bustype_other_text').setAttribute('disabled', 'true');
+  }
+}

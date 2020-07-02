@@ -331,9 +331,9 @@
                                 <label class="form-check-label" for="pe">Self-employed</label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" name="" id="pe" value="1" disabled />
+                                <input class="form-check-input" type="checkbox" name="" id="org_type_other_chkbox" onclick="handleOrgTypeOther(this);" value="1" disabled />
                                 <label class="form-check-label" for="pe">Others (Please specify)</label>
-                                <input class="form-control form-control-sm" type="text" name="" id="" disabled />
+                                <input class="form-control form-control-sm" type="text" name="" id="org_type_other_text" disabled />
                             </div>
                         </div>
                     </div>
@@ -450,7 +450,7 @@
                         </div>
                         <div class="col">
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" name="typb" id="q9oth" value="1" disabled />
+                                <input class="form-check-input" type="checkbox" name="typb" id="selfemp_bustype_other_chkbox" onclick="handleBustypeOther(this);" value="1" disabled />
                                 <label class="form-check-label" for="q9oth">Others (Please specify)</label>
                             </div>
                         </div>
@@ -464,7 +464,7 @@
                             </div>
                         </div>
                         <div class="col">
-                            <input class="form-control form-control-sm" type="text" name="typb" id="otherps" value="" disabled />
+                            <input class="form-control form-control-sm" type="text" name="typb" id="selfemp_bustype_other_text" value="" disabled />
                         </div>
                     </div>
                 </div>
