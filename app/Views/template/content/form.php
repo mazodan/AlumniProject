@@ -235,9 +235,8 @@
                         </div>
                         <div class="col-auto">
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" name="" id="other" value="1">
+                                <input class="form-check-input" type="checkbox" name="" id="otherChkbox" onclick='handleUnempReasonOther(this);' value="1">
                                 <label class="form-check-label" for="other">Other reason(s), please specify</label>
-                                <input class="form-control form-control-sm" type="text" name="" id="sm-otherps" value="">
                             </div>
                         </div>
                     </div>
@@ -250,7 +249,7 @@
                             </div>
                         </div>
                         <div class="col">
-                            <input class="form-control form-control-sm" type="text" name="" id="otherps" value="">
+                            <input class="form-control form-control-sm" type="text" name="" id="otherps" value="" disabled>
                         </div>
                     </div>
                 </div>
