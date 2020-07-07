@@ -165,6 +165,42 @@ function validateForm() {
 
   }
 
+  if (currentTab === 1) {
+    // Using the employment status as a conditional switch, verify relevant inputs
+    if (document.getElementById('emp_never').checked === true || document.getElementById('emp_no').checked === true) {
+      // If alumnus is unemployed or never employed
+      console.log('emp_no');
+
+      // Get all elements from the checklist
+      var unemp_reason_chkboxes = document.getElementById('unemp_reason_chklst').getElementsByTagName('input');
+
+      var unchecked_counter = 0;
+      // Check if any of the checkbox elements are unchecked.
+      for (var element of unemp_reason_chkboxes) {
+        if (element.type === 'checkbox' ) {
+          if (element.checked == false) {
+            unchecked_counter++;
+          }
+        }
+      }
+
+      // If number of unchecked checkboxes equals number of checkboxes
+      // Meaning that the user never checked anything, then make validation false
+      if (unchecked_counter === 7) {
+        valid = false;
+      }
+
+
+
+    } else if (document.getElementById('emp_yes').checked === true) {
+      // If alumnus is employed
+      console.log('emp_yes');
+    }
+    //for debugging purposes
+    // valid = false;
+
+  }
+
   
  
 
