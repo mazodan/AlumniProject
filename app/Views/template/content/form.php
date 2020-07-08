@@ -260,13 +260,13 @@
                     <div class="form-group row">
                         <label class="col-sm-2 col-form-label">Name of Organzation</label>
                         <div class="col-sm-10">
-                            <input class="form-control form-control-sm" type="text" name="pres_org_name" disabled />
+                            <input class="form-control form-control-sm" type="text" id='pres_org_name' name="pres_org_name" disabled />
                         </div>
                     </div>
                     <div class="form-group row">
                         <label class="col-sm-2 col-form-label">Address</label>
                         <div class="col-sm-10">
-                            <input class="form-control form-control-sm" type="text" name="pres_emp_add" disabled />
+                            <input class="form-control form-control-sm" type="text" id='pres_emp_add' name="pres_emp_add" disabled />
                         </div>
                     </div>
                 </div>

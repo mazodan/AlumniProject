@@ -171,6 +171,10 @@ function validateForm() {
       // If alumnus is unemployed or never employed
       console.log('emp_no');
 
+      // Reset custom validation message for re-checking
+      document.getElementById('otherps').setCustomValidity('');
+
+
       // Get all elements from the checklist
       var unemp_reason_chkboxes = document.getElementById('unemp_reason_chklst').getElementsByTagName('input');
 
@@ -190,11 +194,92 @@ function validateForm() {
         valid = false;
       }
 
+      if (document.getElementById('otherChkbox').checked == true) {
+        if (document.getElementById('otherps').value === '') {
+          document.getElementById('otherps').setCustomValidity('Specify other reasons');
+          valid = false;
+        }
+      }
+
 
 
     } else if (document.getElementById('emp_yes').checked === true) {
       // If alumnus is employed
       console.log('emp_yes');
+      // Reset custom validity
+      document.getElementById('pres_org_name').setCustomValidity('');
+      document.getElementById('pres_emp_add').setCustomValidity('');
+      document.getElementById('org_type_other_text').setCustomValidity('');
+
+
+
+      // Check if present employment and address is entered
+      if (document.getElementById('pres_org_name').value === '') {
+        document.getElementById('pres_org_name').setCustomValidity('Required');
+        valid = false;
+      }
+
+      if (document.getElementById('pres_emp_add').value === '') {
+        document.getElementById('pres_emp_add').setCustomValidity('Required');
+        valid = false;
+      }
+
+      // Check type of organization employed in
+      var org_type_emp_checkboxes = document.getElementById('org_pres_emp_chklst').getElementsByTagName('input');
+
+      var unchecked_counter = 0;
+      for (var element of org_type_emp_checkboxes) {
+        if (element.type === 'checkbox' ) {
+          if (element.checked == false) {
+            unchecked_counter++;
+          }
+        }
+      }
+
+      // Check if the any checkboxes are checked
+      if (unchecked_counter === 7) {
+        valid = false;
+      }
+
+      if (document.getElementById('org_type_other_chkbox').checked == true) {
+        if (document.getElementById('org_type_other_text').value === '') {
+          document.getElementById('org_type_other_text').setCustomValidity('Specify other reasons');
+          valid = false;
+        }
+      }
+
+      if (document.getElementById('pres_occup').value === '') {
+        document.getElementById('pres_occup').setCustomValidity('Required');
+        valid = false;
+      }
+
+      // Check if alumnus is self employed
+      if (document.getElementById('self_emp_skills').value !== '') {
+        // Check if any checkboxes are pressed
+        var self_emp_checklists = document.getElementById('self_emp_chklst').getElementsByTagName('input');
+        var unchecked_counter = 0;
+        for (var element of self_emp_checklists) {
+          if (element.type === 'checkbox' ) {
+            if (element.checked == false) {
+              unchecked_counter++;
+            }
+          }
+        }
+
+        if (unchecked_counter === 9) {
+          valid = false;
+        }
+
+        if (document.getElementById('selfemp_bustype_other_chkbox').checked == true) {
+          if (document.getElementById('selfemp_bustype_other_text').value === '') {
+            document.getElementById('selfemp_bustype_other_text').setCustomValidity('Specify other reasons');
+            valid = false;
+          }
+        }
+
+      }
+
+
     }
     //for debugging purposes
     // valid = false;
