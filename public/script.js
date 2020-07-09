@@ -35,6 +35,7 @@ function nextPrev(n) {
     document.getElementById("regForm").submit();
     return false;
   }
+
   // Otherwise, display the correct tab:
   showTab(currentTab);
   scrollToTop();
@@ -407,6 +408,12 @@ function changeHandler(event) {
 
     enableOtherInputField(document.getElementById('selfemp_bustype_other_text'), document.getElementById('selfemp_bustype_other_chkbox'));
 
+    var time_job_after_grad = document.getElementById('time_job_after_grad').getElementsByTagName('input');
+    for (var element of time_job_after_grad) {
+      element.removeAttribute('disabled');
+    }
+
+    document.getElementById('q10oth').checked = true;
 
 
   } else if (this.value == 'no' || this.value == 'never_employed') {
@@ -447,6 +454,10 @@ function changeHandler(event) {
 
     enableOtherInputField(document.getElementById('otherps'), document.getElementById('otherChkbox'));
 
+    var time_job_after_grad = document.getElementById('time_job_after_grad').getElementsByTagName('input');
+    for (var element of time_job_after_grad) {
+      element.setAttribute('disabled', 'true');
+    }
 
   }
 }
@@ -454,6 +465,21 @@ function changeHandler(event) {
 Array.prototype.forEach.call(estatRadios, function(radio) {
   radio.addEventListener('change', changeHandler);
 });
+
+var agRadios = document.querySelectorAll('input[type=radio][name=ag]');
+Array.prototype.forEach.call(agRadios, function(radio) {
+  radio.addEventListener('change', agChangeHandler);
+});
+
+function agChangeHandler(event) {
+  if(this.value === 'other' && document.getElementById('emp_yes').checked === true) {
+    // Enable other box
+    document.getElementById('q10othtext').removeAttribute('disabled');
+  } else {
+    document.getElementById('q10othtext').setAttribute('disabled', 'true');
+  }
+}
+
 
 // Check state of the checkbox when employed value changes
 function enableOtherInputField(element, checkbox) {

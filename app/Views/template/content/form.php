@@ -473,12 +473,12 @@
             <div class="container-fluid ats-form-tab">
 
                 <!--- Q10 --->
-                <div class="form-group">
+                <div class="form-group" id="time_job_after_grad">
                     <label><strong>10. How long did you take to find a job after graduation?</strong></label>
                     <div class="row">
                         <div class="col">
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="ag" id="2mo" value="1">
+                                <input class="form-check-input" type="radio" name="ag" id="2mo" value="1" disabled>
                                 <label class="form-check-label" for="2mo">less than 2 months after graduation</label>
                             </div>
                         </div>
@@ -486,7 +486,7 @@
                     <div class="row">
                         <div class="col">
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="ag" id="4mo" value="1">
+                                <input class="form-check-input" type="radio" name="ag" id="4mo" value="1" disabled>
                                 <label class="form-check-label" for="4mo">after 2-4 months after graduation</label>
                             </div>
                         </div>
@@ -494,7 +494,7 @@
                     <div class="row">
                         <div class="col">
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="ag" id="5mo" value="1">
+                                <input class="form-check-input" type="radio" name="ag" id="5mo" value="1" disabled>
                                 <label class="form-check-label" for="5mo">after 5-10 months after graduation</label>
                             </div>
                         </div>
@@ -502,7 +502,7 @@
                     <div class="row">
                         <div class="col">
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="ag" id="1y" value="1">
+                                <input class="form-check-input" type="radio" name="ag" id="1y" value="1" disabled>
                                 <label class="form-check-label" for="1y">one year after graduation</label>
                             </div>
                         </div>
@@ -510,7 +510,7 @@
                     <div class="row">
                         <div class="col">
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="ag" id="2y" value="1">
+                                <input class="form-check-input" type="radio" name="ag" id="2y" value="1" disabled>
                                 <label class="form-check-label" for="2y">more than one year but not beyond two years after graduation</label>
                             </div>
                         </div>
@@ -518,12 +518,12 @@
                     <div class="row">
                         <div class="col-auto">
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="ag" id="q10oth" value="1">
+                                <input class="form-check-input" type="radio" name="ag" id="q10oth" value="other" disabled>
                                 <label class="form-check-label" for="q10oth">others, please specify</label>
                             </div>
                         </div>
                         <div class="col">
-                            <input class="form-control form-control-sm" type="text" name="">
+                            <input class="form-control form-control-sm" type="text" id='q10othtext' name="" disabled>
                         </div>
                     </div>
                 </div>
