@@ -212,6 +212,8 @@ function validateForm() {
       document.getElementById('pres_emp_add').setCustomValidity('');
       document.getElementById('org_type_other_text').setCustomValidity('');
       document.getElementById('self_emp_skills').setCustomValidity('');
+      document.getElementById('selfemp_bustype_other_text').setCustomValidity('');
+
 
 
 
@@ -259,7 +261,7 @@ function validateForm() {
       // Check if alumnus is self employed
       if (document.getElementById('self_emp_status').checked === true) {
 
-        if (document.getElementById('self_emp_skills').value !== '') {
+        if (document.getElementById('self_emp_skills').value === '') {
           document.getElementById('self_emp_skills').setCustomValidity('Provide input');
           valid = false;
         }
