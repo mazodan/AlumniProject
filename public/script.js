@@ -211,6 +211,8 @@ function validateForm() {
       document.getElementById('pres_org_name').setCustomValidity('');
       document.getElementById('pres_emp_add').setCustomValidity('');
       document.getElementById('org_type_other_text').setCustomValidity('');
+      document.getElementById('self_emp_skills').setCustomValidity('');
+
 
 
 
@@ -255,7 +257,13 @@ function validateForm() {
       }
 
       // Check if alumnus is self employed
-      if (document.getElementById('self_emp_skills').value !== '') {
+      if (document.getElementById('self_emp_status').checked === true) {
+
+        if (document.getElementById('self_emp_skills').value !== '') {
+          document.getElementById('self_emp_skills').setCustomValidity('Provide input');
+          valid = false;
+        }
+
         // Check if any checkboxes are pressed
         var self_emp_checklists = document.getElementById('self_emp_chklst').getElementsByTagName('input');
         var unchecked_counter = 0;
@@ -277,8 +285,9 @@ function validateForm() {
             valid = false;
           }
         }
-
       }
+
+      
 
 
     }
@@ -397,16 +406,18 @@ function changeHandler(event) {
     }
     document.getElementById('regu').checked = true;
 
-    document.getElementById('self_emp_skills').removeAttribute('disabled');
-
-    var self_emp_chklst = document.getElementById('self_emp_chklst').getElementsByTagName('input');
-    for (var element of self_emp_chklst) {
-      element.removeAttribute('disabled');
+    // Regarding self employment status
+    if (document.getElementById('self_emp_status').checked === true) {
+      document.getElementById('self_emp_skills').removeAttribute('disabled');
+      var self_emp_chklst = document.getElementById('self_emp_chklst').getElementsByTagName('input');
+      for (var element of self_emp_chklst) {
+        element.removeAttribute('disabled');
+      }
+      enableOtherInputField(document.getElementById('selfemp_bustype_other_text'), document.getElementById('selfemp_bustype_other_chkbox'));
     }
-
+    
     enableOtherInputField(document.getElementById('org_type_other_text'), document.getElementById('org_type_other_chkbox'));
 
-    enableOtherInputField(document.getElementById('selfemp_bustype_other_text'), document.getElementById('selfemp_bustype_other_chkbox'));
 
     var time_job_after_grad = document.getElementById('time_job_after_grad').getElementsByTagName('input');
     for (var element of time_job_after_grad) {
@@ -511,5 +522,30 @@ function handleUnempReasonOther(checkbox) {
     document.getElementById('otherps').removeAttribute('disabled');
   } else {
     document.getElementById('otherps').setAttribute('disabled', 'true');
+  }
+}
+
+// Enable input regarding self employment
+var presEmpStatChecklst = document.querySelectorAll('input[type=radio][name=pes]');
+Array.prototype.forEach.call(presEmpStatChecklst, function(radio) {
+  radio.addEventListener('change', presEmpChangeHandler);
+});
+
+function presEmpChangeHandler(event) {
+  if (this.value === 'self_emp') {
+    document.getElementById('self_emp_skills').removeAttribute('disabled');
+    var self_emp_chklst = document.getElementById('self_emp_chklst').getElementsByTagName('input');
+    for (var element of self_emp_chklst) {
+      element.removeAttribute('disabled');
+    }
+    enableOtherInputField(document.getElementById('selfemp_bustype_other_text'), document.getElementById('selfemp_bustype_other_chkbox'));
+
+  } else {
+    document.getElementById('self_emp_skills').setAttribute('disabled','true');
+
+    var self_emp_chklst = document.getElementById('self_emp_chklst').getElementsByTagName('input');
+    for (var element of self_emp_chklst) {
+      element.setAttribute('disabled', 'true');
+    }
   }
 }

@@ -350,13 +350,13 @@
                     <div class="row">
                         <div class="col-2 sw-col-4">
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="pes" id="regu" value="1" disabled />
+                                <input class="form-check-input" type="radio" name="pes" id="regu" value="regular" disabled checked/>
                                 <label class="form-check-label" for="regu">Regular</label>
                             </div>
                         </div>
                         <div class="col-auto">
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="pes" id="contr" value="1" disabled />
+                                <input class="form-check-input" type="radio" name="pes" id="contr" value="contractual" disabled />
                                 <label class="form-check-label" for="contr">Contractual</label>
                             </div>
                         </div>
@@ -364,13 +364,13 @@
                     <div class="row">
                         <div class="col-2 sw-col-4">
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="pes" id="temp" value="1" disabled />
+                                <input class="form-check-input" type="radio" name="pes" id="temp" value="temp" disabled />
                                 <label class="form-check-label" for="temp">Temporary</label>
                             </div>
                         </div>
                         <div class="col-auto">
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="pes" id="se" value="1" disabled />
+                                <input class="form-check-input" type="radio" name="pes" id="self_emp_status" value="self_emp" disabled />
                                 <label class="form-check-label" for="se">Self-employed</label>
                             </div>
                         </div>
@@ -378,7 +378,7 @@
                     <div class="row">
                         <div class="col-2">
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="pes" id="cas" value="1" disabled />
+                                <input class="form-check-input" type="radio" name="pes" id="cas" value="casual" disabled />
                                 <label class="form-check-label" for="cas">Casual</label>
                             </div>
                         </div>
