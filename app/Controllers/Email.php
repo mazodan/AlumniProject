@@ -17,8 +17,8 @@ class Email extends BaseController{
     if(!isset($_POST['sendmail'])){
       return view('errors/html/error_404');
     }else{
-      $email->setFrom('alumni@jasperonza.com', 'Alumni Name');
-      $email->setTo('jasperonza@gmail.com');
+      $email->setFrom('alumniAdmin@email.com', 'Alumni Admin');
+      $email->setTo('toAlumni@email.com');
       $email->setSubject('Email Test');
       $email->setMessage('Test email from localhost codeigniter');
       $email->send();
